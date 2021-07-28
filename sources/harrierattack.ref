@@ -1,0 +1,27 @@
+;
+; SkoolKit ref file for Harrier Attack
+;
+; To build the HTML disassembly, run these commands:
+;   tap2sna.py @harrierattack.t2s
+;   sna2skool.py -H -c harrierattack.ctl harrierattack.z80 > harrierattack.skool
+;   skool2html.py -H harrierattack.skool -T dark
+
+[Game]
+Game=Harrier Attack
+Logo=#SCR1,0,0,32,4,$4000,$5800(/images/logo)
+Copyright=&copy; 1983 Durell Software LTD
+StyleSheet=skoolkit.css;skoolkit-dark.css;harrierattack.css
+
+[PageHeaders]
+GameIndex=The complete<>RAM disassembly (work in progress)
+
+[Index]
+MemoryMaps
+Graphics
+DataTables
+Reference
+
+[Page:Changelog]
+SectionType=BulletPoints
+[Changelog:20200701]
+- First draft created in SkoolKit 8.1.
