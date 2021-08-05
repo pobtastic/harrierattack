@@ -1,0 +1,3 @@
+GAME=harrierattack
+SRCFILES=$(echo harrierattack.skool {harrierattack,changelog,pokes}.ref harrierattack.css COPYING)
+SKOOL2BINOPTS="-i"

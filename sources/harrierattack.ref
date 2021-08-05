@@ -11,6 +11,7 @@ Game=Harrier Attack
 Logo=#SCR1,0,0,32,4,$4000,$5800(/images/logo)
 Copyright=&copy; 1983 Durell Software LTD
 StyleSheet=skoolkit.css;skoolkit-dark.css;harrierattack.css
+GameDir=harrierattack
 
 [PageHeaders]
 GameIndex=The complete<>RAM disassembly (work in progress)
