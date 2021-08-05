@@ -48,109 +48,91 @@ On entry <span class="register">C</span> is a counter for how long the effect wi
 </td>
 </tr>
 <tr>
-<td class="asm-label">CRASH_SOUND</td>
 <td class="address-2"><span id="28487"></span>6F47</td>
 <td class="instruction">LD HL,$6A1C</td>
 <td class="comment-1" rowspan="1">Point to <a href="27164.html">6A1C</a>.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28490"></span>6F4A</td>
 <td class="instruction">XOR A</td>
 <td class="comment-1" rowspan="1"><span class="register">A</span>=$00.</td>
 </tr>
 <tr>
-<td class="asm-label">CRASH_SOUND_LOOP</td>
 <td class="address-2"><span id="28491"></span>6F4B</td>
 <td class="instruction">LD B,(HL)</td>
 <td class="comment-1" rowspan="1"><span class="register">B</span>=Fetch the sound data byte.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28492"></span>6F4C</td>
 <td class="instruction">INC HL</td>
 <td class="comment-1" rowspan="1">Move onto the next sound data byte.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28493"></span>6F4D</td>
 <td class="instruction">DJNZ $6F4D</td>
 <td class="comment-1" rowspan="1"><a href="28487.html#28493">6F4D</a>.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28495"></span>6F4F</td>
 <td class="instruction">SET 4,A</td>
 <td class="comment-1" rowspan="1"><span class="register">A</span>=$10.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28497"></span>6F51</td>
 <td class="instruction">OUT ($FE),A</td>
 <td class="comment-1" rowspan="1">Border colour.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28499"></span>6F53</td>
 <td class="instruction">LD B,(HL)</td>
 <td class="comment-1" rowspan="1"><span class="register">B</span>=Fetch the sound data byte.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28500"></span>6F54</td>
 <td class="instruction">INC HL</td>
 <td class="comment-1" rowspan="1">Move onto the next sound data byte.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28501"></span>6F55</td>
 <td class="instruction">DJNZ $6F55</td>
 <td class="comment-1" rowspan="1"><a href="28487.html#28501">6F55</a>.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28503"></span>6F57</td>
 <td class="instruction">RES 4,A</td>
 <td class="comment-1" rowspan="1"><span class="register">A</span>=$00.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28505"></span>6F59</td>
 <td class="instruction">OUT ($FE),A</td>
 <td class="comment-1" rowspan="1">Border colour.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28507"></span>6F5B</td>
 <td class="instruction">INC A</td>
 <td class="comment-1" rowspan="1"><span class="register">A</span>=$01.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28508"></span>6F5C</td>
 <td class="instruction">DEC C</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28509"></span>6F5D</td>
-<td class="instruction">JR NZ,<a href="28487.html#28491">CRASH_SOUND_LOOP</a></td>
+<td class="instruction">JR NZ,$6F4B</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28511"></span>6F5F</td>
 <td class="instruction">XOR A</td>
 <td class="comment-1" rowspan="1"><span class="register">A</span>=$00.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28512"></span>6F60</td>
 <td class="instruction">OUT ($FE),A</td>
 <td class="comment-1" rowspan="1">Border colour.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28514"></span>6F62</td>
 <td class="instruction">RET</td>
 <td class="comment-1" rowspan="1">Return.</td>
@@ -166,181 +148,151 @@ This entry point is used by the routines at <a href="28297.html">6E89</a>, <a hr
 </td>
 </tr>
 <tr>
-<td class="asm-label">CRASH_SOUND_0</td>
 <td class="address-2"><span id="28515"></span>6F63</td>
 <td class="instruction">PUSH HL</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28516"></span>6F64</td>
 <td class="instruction">PUSH AF</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28517"></span>6F65</td>
 <td class="instruction">LD C,$28</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28519"></span>6F67</td>
-<td class="instruction">CALL <a href="28487.html#28487">CRASH_SOUND</a></td>
+<td class="instruction">CALL $6F47</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28522"></span>6F6A</td>
 <td class="instruction">POP AF</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28523"></span>6F6B</td>
 <td class="instruction">OR A</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28524"></span>6F6C</td>
-<td class="instruction">JR NZ,<a href="28487.html#28528">CRASH_SOUND_1</a></td>
+<td class="instruction">JR NZ,$6F70</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28526"></span>6F6E</td>
 <td class="instruction">POP HL</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28527"></span>6F6F</td>
 <td class="instruction">RET</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label">CRASH_SOUND_1</td>
 <td class="address-2"><span id="28528"></span>6F70</td>
 <td class="instruction">LD HL,($5B1B)</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28531"></span>6F73</td>
 <td class="instruction">ADD A,L</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28532"></span>6F74</td>
-<td class="instruction">JR NC,<a href="28487.html#28535">CRASH_SOUND_2</a></td>
+<td class="instruction">JR NC,$6F77</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28534"></span>6F76</td>
 <td class="instruction">INC H</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label">CRASH_SOUND_2</td>
 <td class="address-2"><span id="28535"></span>6F77</td>
 <td class="instruction">LD L,A</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28536"></span>6F78</td>
 <td class="instruction">LD ($5B1B),HL</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28539"></span>6F7B</td>
 <td class="instruction">LD A,$02</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28541"></span>6F7D</td>
 <td class="instruction">CALL $1601</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28544"></span>6F80</td>
 <td class="instruction">LD BC,$061A</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28547"></span>6F83</td>
 <td class="instruction">CALL $0DD9</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28550"></span>6F86</td>
 <td class="instruction">LD A,$07</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28552"></span>6F88</td>
 <td class="instruction">LD ($5C8F),A</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28555"></span>6F8B</td>
 <td class="instruction">LD BC,($5B1B)</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28559"></span>6F8F</td>
 <td class="instruction">CALL $1A1B</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28562"></span>6F92</td>
 <td class="instruction">LD A,$30</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28564"></span>6F94</td>
 <td class="instruction">RST $10</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28565"></span>6F95</td>
 <td class="instruction">LD HL,($5B49)</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28568"></span>6F98</td>
 <td class="instruction">INC HL</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28569"></span>6F99</td>
 <td class="instruction">LD ($5B49),HL</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28572"></span>6F9C</td>
 <td class="instruction">POP HL</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="28573"></span>6F9D</td>
 <td class="instruction">RET</td>
 <td class="comment-1" rowspan="1"></td>

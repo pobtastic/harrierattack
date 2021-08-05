@@ -38,123 +38,102 @@ Used by the routine at <a href="29026.html">7162</a>.
 </td>
 </tr>
 <tr>
-<td class="asm-label">XXX</td>
 <td class="address-2"><span id="24875"></span>612B</td>
 <td class="instruction">PUSH AF</td>
 <td class="comment-1" rowspan="1">Stash <span class="register">AF</span> on the stack for later.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24876"></span>612C</td>
 <td class="instruction">PUSH BC</td>
 <td class="comment-1" rowspan="3">Stash <span class="register">BC</span>, <span class="register">HL</span> and <span class="register">DE</span> on the stack.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24877"></span>612D</td>
 <td class="instruction">PUSH HL</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24878"></span>612E</td>
 <td class="instruction">PUSH DE</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24879"></span>612F</td>
 <td class="instruction">CALL <a href="24852.html">$6114</a></td>
 <td class="comment-1" rowspan="1">Call <a href="24852.html">6114</a>.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24882"></span>6132</td>
 <td class="instruction">POP DE</td>
 <td class="comment-1" rowspan="3">Retrieve <span class="register">DE</span>, <span class="register">HL</span> and <span class="register">BC</span> from the stack.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24883"></span>6133</td>
 <td class="instruction">POP HL</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24884"></span>6134</td>
 <td class="instruction">POP BC</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24885"></span>6135</td>
 <td class="instruction">INC L</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24886"></span>6136</td>
 <td class="instruction">LD A,L</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24887"></span>6137</td>
 <td class="instruction">AND $E0</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24889"></span>6139</td>
-<td class="instruction">JR Z,<a href="24875.html#24894">XXXX</a></td>
+<td class="instruction">JR Z,$613E</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24891"></span>613B</td>
 <td class="instruction">XOR A</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24892"></span>613C</td>
 <td class="instruction">LD L,A</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24893"></span>613D</td>
 <td class="instruction">INC H</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label">XXXX</td>
 <td class="address-2"><span id="24894"></span>613E</td>
 <td class="instruction">DEC DE</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24895"></span>613F</td>
 <td class="instruction">LD A,D</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24896"></span>6140</td>
 <td class="instruction">OR E</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24897"></span>6141</td>
-<td class="instruction">JR NZ,<a href="24875.html#24901">XXXXX</a></td>
+<td class="instruction">JR NZ,$6145</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24899"></span>6143</td>
 <td class="instruction">POP AF</td>
 <td class="comment-1" rowspan="1">Retrieve <span class="register">AF</span> from the stack.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24900"></span>6144</td>
 <td class="instruction">RET</td>
 <td class="comment-1" rowspan="1">Return.</td>
@@ -170,16 +149,14 @@ Else, loop back to the start.
 </td>
 </tr>
 <tr>
-<td class="asm-label">XXXXX</td>
 <td class="address-2"><span id="24901"></span>6145</td>
 <td class="instruction">POP AF</td>
 <td class="comment-1" rowspan="1">Retrieve <span class="register">AF</span> from the stack.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24902"></span>6146</td>
-<td class="instruction">JR <a href="24875.html#24875">XXX</a></td>
-<td class="comment-1" rowspan="1">Jump back to <a href="24875.html">XXX</a>.</td>
+<td class="instruction">JR $612B</td>
+<td class="comment-1" rowspan="1">Jump back to <a href="24875.html">612B</a>.</td>
 </tr>
 </table>
 <table class="asm-navigation">

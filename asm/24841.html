@@ -48,49 +48,40 @@ On entry <span class="register">BC</span> should point to a screen address and <
 </td>
 </tr>
 <tr>
-<td class="asm-label">UDG_DRAW</td>
 <td class="address-2"><span id="24841"></span>6109</td>
 <td class="instruction">LD L,C</td>
 <td class="comment-1" rowspan="2">Copies <span class="register">BC</span> containing the screen address into <span class="register">HL</span>.</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24842"></span>610A</td>
 <td class="instruction">LD H,B</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24843"></span>610B</td>
 <td class="instruction">LD B,$08</td>
 <td class="comment-1" rowspan="6">Draw the UDG graphic data to the screen.</td>
 </tr>
 <tr>
-<td class="asm-label">UDG_DRAW_LOOP</td>
 <td class="address-2"><span id="24845"></span>610D</td>
 <td class="instruction">LD A,(DE)</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24846"></span>610E</td>
 <td class="instruction">LD (HL),A</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24847"></span>610F</td>
 <td class="instruction">INC H</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24848"></span>6110</td>
 <td class="instruction">INC DE</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24849"></span>6111</td>
-<td class="instruction">DJNZ <a href="24841.html#24845">UDG_DRAW_LOOP</a></td>
+<td class="instruction">DJNZ $610D</td>
 </tr>
 <tr>
-<td class="asm-label"></td>
 <td class="address-1"><span id="24851"></span>6113</td>
 <td class="instruction">RET</td>
 <td class="comment-1" rowspan="1">Return.</td>
