@@ -3,8 +3,11 @@
 ;
 ; To build the HTML disassembly, run these commands:
 ;   tap2sna.py @harrierattack.t2s
-;   sna2skool.py -H -c harrierattack.ctl harrierattack.z80 > harrierattack.skool
-;   skool2html.py -H harrierattack.skool -T dark
+;   sna2skool.py -H -c sources/harrierattack.ctl HarrierAttack.z80 > sources/harrierattack.skool
+;   skool2html.py -H sources/harrierattack.skool -T dark
+
+[Config]
+RefFiles=analytics.ref;bases.ref
 
 [Game]
 Game=Harrier Attack
@@ -26,3 +29,5 @@ Reference
 SectionType=BulletPoints
 [Changelog:20200701]
 - First draft created in SkoolKit 8.1.
+[Changelog:20220701]
+- Updated to Skoolkit 8.6.
