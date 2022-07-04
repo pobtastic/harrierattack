@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harrier Attack: Routine at 6007</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../skoolkit.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
+<link rel="stylesheet" type="text/css" href="../harrierattack.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-75RERFCHBG"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-75RERFCHBG');
+</script>
+</head>
+<body class="Asm-c">
+<table class="header">
+<tr>
+<td class="logo"><a href="../index.html"><img alt="logo" src="../images/logo.png" /></a></td>
+<td class="page-header">Routines</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="6000.html">6000</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#24583">Map</a></td>
+<td class="next">
+Next: <a href="604D.html">604D</a>
+</td>
+</tr>
+</table>
+<div class="description">6007: Routine at 6007</div>
+<table class="disassembly">
+<tr>
+<td class="routine-comment" colspan="5">
+<div class="details">
+<div class="paragraph">
+Used by the routine at <a href="6000.html">6000</a>.
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label">ENTRY</td>
+<td class="address-2"><span id="24583"></span>6007</td>
+<td class="instruction">LD HL,$581F</td>
+<td class="comment-1" rowspan="16"><span class="register">HL</span>=$581F</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24586"></span>600A</td>
+<td class="instruction">LD DE,$001F</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24589"></span>600D</td>
+<td class="instruction">LD B,$0F</td>
+</tr>
+<tr>
+<td class="asm-label">LOOP</td>
+<td class="address-2"><span id="24591"></span>600F</td>
+<td class="instruction">LD A,(HL)</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24592"></span>6010</td>
+<td class="instruction">AND $38</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24594"></span>6012</td>
+<td class="instruction">RRA</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24595"></span>6013</td>
+<td class="instruction">RRA</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24596"></span>6014</td>
+<td class="instruction">RRA</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24597"></span>6015</td>
+<td class="instruction">LD C,A</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24598"></span>6016</td>
+<td class="instruction">LD A,(HL)</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24599"></span>6017</td>
+<td class="instruction">AND $F8</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24601"></span>6019</td>
+<td class="instruction">OR C</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24602"></span>601A</td>
+<td class="instruction">INC HL</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24603"></span>601B</td>
+<td class="instruction">LD (HL),A</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24604"></span>601C</td>
+<td class="instruction">ADD HL,DE</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24605"></span>601D</td>
+<td class="instruction">DJNZ <a href="6007.html#24591">LOOP</a></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24607"></span>601F</td>
+<td class="instruction">CALL <a href="6E89.html">$6E89</a></td>
+<td class="comment-1" rowspan="1">Call <a href="6E89.html">6E89</a>.</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24610"></span>6022</td>
+<td class="instruction">LD A,($5B21)</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24613"></span>6025</td>
+<td class="instruction">BIT 3,A</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24615"></span>6027</td>
+<td class="instruction">CALL Z,<a href="6DD0.html">$6DD0</a></td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24618"></span>602A</td>
+<td class="instruction">LD BC,$0100</td>
+<td class="comment-1" rowspan="4">Copies $100 bytes of data from $5800</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24621"></span>602D</td>
+<td class="instruction">LD HL,$5801</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24624"></span>6030</td>
+<td class="instruction">LD DE,$5800</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24627"></span>6033</td>
+<td class="instruction">LDIR</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24629"></span>6035</td>
+<td class="instruction">LD BC,$0800</td>
+<td class="comment-1" rowspan="4">Copies $800 bytes of data from ...</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24632"></span>6038</td>
+<td class="instruction">LD HL,$4001</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24635"></span>603B</td>
+<td class="instruction">LD DE,$4000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24638"></span>603E</td>
+<td class="instruction">LDIR</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24640"></span>6040</td>
+<td class="instruction">BIT 3,A</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24642"></span>6042</td>
+<td class="instruction">CALL Z,<a href="6D09.html">$6D09</a></td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24645"></span>6045</td>
+<td class="instruction">LD A,($5B21)</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24648"></span>6048</td>
+<td class="instruction">BIT 3,A</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="24650"></span>604A</td>
+<td class="instruction">CALL NZ,<a href="6DD0.html">$6DD0</a></td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="6000.html">6000</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#24583">Map</a></td>
+<td class="next">
+Next: <a href="604D.html">604D</a>
+</td>
+</tr>
+</table>
+<footer>
+<div class="release"></div>
+<div class="copyright">&copy; 1983 Durell Software LTD</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div><a href="../../dec/asm/24583.html">Switch to decimal</a>.</div>
+</footer>
+</body>
+</html>
