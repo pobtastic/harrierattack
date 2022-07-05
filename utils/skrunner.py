@@ -6,6 +6,7 @@ HARRIERATTACK_HOME = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HARRIERATTACK_SKOOL = '{}/sources/harrierattack.skool'.format(HARRIERATTACK_HOME)
 
 SKOOLKIT_HOME = os.environ.get('SKOOLKIT_HOME')
+SKOOLKIT_TOOLS = "{}/tools".format(SKOOLKIT_HOME)
 if SKOOLKIT_HOME:
     if not os.path.isdir(SKOOLKIT_HOME):
         sys.stderr.write('SKOOLKIT_HOME={}: directory not found\n'.format(SKOOLKIT_HOME))
@@ -25,9 +26,9 @@ def run_skool2asm():
     skool2asm.main(sys.argv[1:] + [HARRIERATTACK_SKOOL])
 
 def run_skool2html():
-    options = '-c Config/InitModule=sources:bases -d {}/build/html'.format(HARRIERATTACK_HOME)
+    options = "-c Config/InitModule={}:publish -d {}/build/html".format(SKOOLKIT_TOOLS, HARRIERATTACK_HOME)
     art.tprint("Harrier Attack")
-    hex = '-H -c Config/GameDir=harrierattack/hex'
-    dec = '-D -c Config/GameDir=harrierattack/dec'
+    hex = '-H -c Config/GameDir=harrierattack --var pub=2'
+    dec = '-D -c Config/GameDir=harrierattack/dec --var pub=4'
     skool2html.main(options.split() + hex.split() + sys.argv[1:] + [HARRIERATTACK_SKOOL])
     skool2html.main(options.split() + dec.split() + sys.argv[1:] + [HARRIERATTACK_SKOOL])
