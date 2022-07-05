@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harrier Attack: Routine at 6BE7</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../skoolkit.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
+<link rel="stylesheet" type="text/css" href="../harrierattack.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-75RERFCHBG"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-75RERFCHBG');
+</script>
+</head>
+<body class="Asm-c">
+<table class="header">
+<tr>
+<td class="logo"><a href="../index.html"><img alt="logo" src="../images/logo.png" /></a></td>
+<td class="page-header">Routines</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="6BD0.html">6BD0</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#6be7">Map</a></td>
+<td class="next">
+Next: <a href="6C77.html">6C77</a>
+</td>
+</tr>
+</table>
+<div class="description">6BE7: Routine at 6BE7</div>
+<table class="disassembly">
+<tr>
+<td class="routine-comment" colspan="5">
+<div class="details">
+<div class="paragraph">
+Used by the routines at <a href="6E0E.html">6E0E</a>, <a href="6F9E.html">6F9E</a> and <a href="6FD8.html">6FD8</a>.
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="address-2"><span id="6be7"></span>6BE7</td>
+<td class="instruction">DI</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6be8"></span>6BE8</td>
+<td class="instruction">PUSH IX</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6bea"></span>6BEA</td>
+<td class="instruction">PUSH HL</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6beb"></span>6BEB</td>
+<td class="instruction">POP IX</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6bed"></span>6BED</td>
+<td class="instruction">DEC (IX+$00)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6bf0"></span>6BF0</td>
+<td class="instruction">JR NZ,<a href="6BE7.html#6c00">$6C00</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6bf2"></span>6BF2</td>
+<td class="instruction">LD A,(IX+$03)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6bf5"></span>6BF5</td>
+<td class="instruction">LD (IX+$00),A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6bf8"></span>6BF8</td>
+<td class="instruction">DEC (IX+$01)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6bfb"></span>6BFB</td>
+<td class="instruction">JR NZ,<a href="6BE7.html#6c04">$6C04</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6bfd"></span>6BFD</td>
+<td class="instruction">INC (IX+$01)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6c00"></span>6C00</td>
+<td class="instruction">POP IX</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c02"></span>6C02</td>
+<td class="instruction">EI</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c03"></span>6C03</td>
+<td class="instruction">RET</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6c04"></span>6C04</td>
+<td class="instruction">LD A,(IX+$02)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c07"></span>6C07</td>
+<td class="instruction">ADD A,(IX+$01)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c0a"></span>6C0A</td>
+<td class="instruction">LD HL,$5AB0</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c0d"></span>6C0D</td>
+<td class="instruction">ADD A,L</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c0e"></span>6C0E</td>
+<td class="instruction">LD L,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c0f"></span>6C0F</td>
+<td class="instruction">LD C,$20</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c11"></span>6C11</td>
+<td class="instruction">LD A,(IX+$01)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c14"></span>6C14</td>
+<td class="instruction">CP $03</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c16"></span>6C16</td>
+<td class="instruction">JR NC,<a href="6BE7.html#6c33">$6C33</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c18"></span>6C18</td>
+<td class="instruction">LD C,$50</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c1a"></span>6C1A</td>
+<td class="instruction">PUSH HL</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c1b"></span>6C1B</td>
+<td class="instruction">LD DE,$001F</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c1e"></span>6C1E</td>
+<td class="instruction">SRL A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c20"></span>6C20</td>
+<td class="instruction">SRL A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c22"></span>6C22</td>
+<td class="instruction">SBC HL,DE</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c24"></span>6C24</td>
+<td class="instruction">LD B,$0E</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6c26"></span>6C26</td>
+<td class="instruction">LD A,(HL)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c27"></span>6C27</td>
+<td class="instruction">XOR (IX+$04)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c2a"></span>6C2A</td>
+<td class="instruction">LD (HL),A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c2b"></span>6C2B</td>
+<td class="instruction">INC HL</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c2c"></span>6C2C</td>
+<td class="instruction">DJNZ <a href="6BE7.html#6c26">$6C26</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c2e"></span>6C2E</td>
+<td class="instruction">LD (IX+$04),$80</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c32"></span>6C32</td>
+<td class="instruction">POP HL</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6c33"></span>6C33</td>
+<td class="instruction">LD (HL),C</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c34"></span>6C34</td>
+<td class="instruction">INC HL</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c35"></span>6C35</td>
+<td class="instruction">LD (HL),$30</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c37"></span>6C37</td>
+<td class="instruction">JR <a href="6BE7.html#6c00">$6C00</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6c39"></span>
+<div class="comments">
+<div class="paragraph">
+This entry point is used by the routine at <a href="6C77.html">6C77</a>.
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="address-2"><span id="6c39"></span>6C39</td>
+<td class="instruction">LD B,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c3a"></span>6C3A</td>
+<td class="instruction">LD A,($5B26)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c3d"></span>6C3D</td>
+<td class="instruction">ADD A,B</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c3e"></span>6C3E</td>
+<td class="instruction">INC A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c3f"></span>6C3F</td>
+<td class="instruction">JR NZ,<a href="6BE7.html#6c45">$6C45</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c41"></span>6C41</td>
+<td class="instruction">LD ($5B26),A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c44"></span>6C44</td>
+<td class="instruction">RET</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6c45"></span>6C45</td>
+<td class="instruction">DEC A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c46"></span>6C46</td>
+<td class="instruction">CP $10</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c48"></span>6C48</td>
+<td class="instruction">RET NC</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c49"></span>6C49</td>
+<td class="instruction">LD ($5B26),A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c4c"></span>6C4C</td>
+<td class="instruction">LD HL,$5AA0</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c4f"></span>6C4F</td>
+<td class="instruction">ADD A,L</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c50"></span>6C50</td>
+<td class="instruction">LD L,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c51"></span>6C51</td>
+<td class="instruction">LD (HL),$50</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c53"></span>6C53</td>
+<td class="instruction">LD A,B</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c54"></span>6C54</td>
+<td class="instruction">DEC A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c55"></span>6C55</td>
+<td class="instruction">JR NZ,<a href="6BE7.html#6c5a">$6C5A</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c57"></span>6C57</td>
+<td class="instruction">DEC HL</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c58"></span>6C58</td>
+<td class="instruction">JR <a href="6BE7.html#6c5b">$6C5B</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6c5a"></span>6C5A</td>
+<td class="instruction">INC HL</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6c5b"></span>6C5B</td>
+<td class="instruction">LD (HL),$30</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c5d"></span>6C5D</td>
+<td class="instruction">RET</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6c5e"></span>
+<div class="comments">
+<div class="paragraph">
+This entry point is used by the routines at <a href="6E89.html">6E89</a> and <a href="6EF0.html">6EF0</a>.
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="address-2"><span id="6c5e"></span>6C5E</td>
+<td class="instruction">PUSH HL</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c5f"></span>6C5F</td>
+<td class="instruction">LD A,$64</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c61"></span>6C61</td>
+<td class="instruction">LD C,$2B</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c63"></span>6C63</td>
+<td class="instruction">CALL <a href="6114.html">$6114</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c66"></span>6C66</td>
+<td class="instruction">POP HL</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c67"></span>6C67</td>
+<td class="instruction">DEC H</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c68"></span>6C68</td>
+<td class="instruction">CALL <a href="60F6.html">$60F6</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c6b"></span>6C6B</td>
+<td class="instruction">LD A,(DE)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c6c"></span>6C6C</td>
+<td class="instruction">CP $2D</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c6e"></span>6C6E</td>
+<td class="instruction">RET NZ</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c6f"></span>6C6F</td>
+<td class="instruction">LD A,$62</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c71"></span>6C71</td>
+<td class="instruction">LD C,$2B</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c73"></span>6C73</td>
+<td class="instruction">CALL <a href="6114.html">$6114</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c76"></span>6C76</td>
+<td class="instruction">RET</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="6BD0.html">6BD0</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#6be7">Map</a></td>
+<td class="next">
+Next: <a href="6C77.html">6C77</a>
+</td>
+</tr>
+</table>
+<footer>
+<div class="release"></div>
+<div class="copyright">&copy; 1983 Durell Software LTD</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div><a href="../dec/asm/27623.html">Switch to decimal</a>.</div>
+</footer>
+</body>
+</html>

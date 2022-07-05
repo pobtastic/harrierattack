@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harrier Attack: Routine at 6C77</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../skoolkit.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
+<link rel="stylesheet" type="text/css" href="../harrierattack.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-75RERFCHBG"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-75RERFCHBG');
+</script>
+</head>
+<body class="Asm-c">
+<table class="header">
+<tr>
+<td class="logo"><a href="../index.html"><img alt="logo" src="../images/logo.png" /></a></td>
+<td class="page-header">Routines</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="6BE7.html">6BE7</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#6c77">Map</a></td>
+<td class="next">
+Next: <a href="6CF6.html">6CF6</a>
+</td>
+</tr>
+</table>
+<div class="description">6C77: Routine at 6C77</div>
+<table class="disassembly">
+<tr>
+<td class="routine-comment" colspan="5">
+<div class="details">
+<div class="paragraph">
+Used by the routine at <a href="6000.html">6000</a>.
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="address-2"><span id="6c77"></span>6C77</td>
+<td class="instruction">LD A,($5B34)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c7a"></span>6C7A</td>
+<td class="instruction">OR A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c7b"></span>6C7B</td>
+<td class="instruction">JR NZ,<a href="6C77.html#6c84">$6C84</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c7d"></span>6C7D</td>
+<td class="instruction">LD A,($5B00)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c80"></span>6C80</td>
+<td class="instruction">CP $0B</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c82"></span>6C82</td>
+<td class="instruction">JR NC,<a href="6C77.html#6caa">$6CAA</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6c84"></span>6C84</td>
+<td class="instruction">LD A,($5B22)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c87"></span>6C87</td>
+<td class="instruction">OR A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c88"></span>6C88</td>
+<td class="instruction">JR NZ,<a href="6C77.html#6caf">$6CAF</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c8a"></span>6C8A</td>
+<td class="instruction">LD A,($5B06)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c8d"></span>6C8D</td>
+<td class="instruction">CP $02</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c8f"></span>6C8F</td>
+<td class="instruction">JR NC,<a href="6C77.html#6caf">$6CAF</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c91"></span>6C91</td>
+<td class="instruction">LD BC,$F7FE</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c94"></span>6C94</td>
+<td class="instruction">IN D,(C)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c96"></span>6C96</td>
+<td class="instruction">LD BC,$EFFE</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c99"></span>6C99</td>
+<td class="instruction">IN A,(C)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c9b"></span>6C9B</td>
+<td class="instruction">ADD A,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c9c"></span>6C9C</td>
+<td class="instruction">ADD A,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c9d"></span>6C9D</td>
+<td class="instruction">XOR D</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6c9e"></span>6C9E</td>
+<td class="instruction">AND $10</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ca0"></span>6CA0</td>
+<td class="instruction">JR Z,<a href="6C77.html#6caf">$6CAF</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ca2"></span>6CA2</td>
+<td class="instruction">BIT 4,D</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ca4"></span>6CA4</td>
+<td class="instruction">JR Z,<a href="6C77.html#6caa">$6CAA</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ca6"></span>6CA6</td>
+<td class="instruction">LD A,$01</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ca8"></span>6CA8</td>
+<td class="instruction">JR <a href="6C77.html#6cac">$6CAC</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6caa"></span>6CAA</td>
+<td class="instruction">LD A,$FF</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6cac"></span>6CAC</td>
+<td class="instruction">CALL <a href="6BE7.html#6c39">$6C39</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6caf"></span>6CAF</td>
+<td class="instruction">LD A,($5B27)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cb2"></span>6CB2</td>
+<td class="instruction">LD B,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cb3"></span>6CB3</td>
+<td class="instruction">LD A,$05</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cb5"></span>6CB5</td>
+<td class="instruction">SUB B</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cb6"></span>6CB6</td>
+<td class="instruction">RRCA</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cb7"></span>6CB7</td>
+<td class="instruction">RRCA</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cb8"></span>6CB8</td>
+<td class="instruction">RRCA</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cb9"></span>6CB9</td>
+<td class="instruction">INC A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cba"></span>6CBA</td>
+<td class="instruction">LD B,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cbb"></span>6CBB</td>
+<td class="instruction">SRL A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cbd"></span>6CBD</td>
+<td class="instruction">SRL A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cbf"></span>6CBF</td>
+<td class="instruction">ADD A,$04</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cc1"></span>6CC1</td>
+<td class="instruction">LD C,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cc2"></span>6CC2</td>
+<td class="instruction">LD A,($5B22)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cc5"></span>6CC5</td>
+<td class="instruction">INC A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cc6"></span>6CC6</td>
+<td class="instruction">BIT 1,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cc8"></span>6CC8</td>
+<td class="instruction">JR Z,<a href="6C77.html#6ccf">$6CCF</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cca"></span>6CCA</td>
+<td class="instruction">CALL <a href="6F47.html">$6F47</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ccd"></span>6CCD</td>
+<td class="instruction">JR <a href="6C77.html#6cd6">$6CD6</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6ccf"></span>6CCF</td>
+<td class="instruction">PUSH BC</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cd0"></span>6CD0</td>
+<td class="instruction">CALL <a href="6CF6.html#6cfe">$6CFE</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cd3"></span>6CD3</td>
+<td class="instruction">POP BC</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cd4"></span>6CD4</td>
+<td class="instruction">DJNZ <a href="6C77.html#6ccf">$6CCF</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6cd6"></span>6CD6</td>
+<td class="instruction">LD A,($5B26)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cd9"></span>6CD9</td>
+<td class="instruction">LD B,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cda"></span>6CDA</td>
+<td class="instruction">LD A,$0F</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cdc"></span>6CDC</td>
+<td class="instruction">SUB B</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cdd"></span>6CDD</td>
+<td class="instruction">RRCA</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cde"></span>6CDE</td>
+<td class="instruction">RRCA</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cdf"></span>6CDF</td>
+<td class="instruction">RRCA</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ce0"></span>6CE0</td>
+<td class="instruction">RRCA</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ce1"></span>6CE1</td>
+<td class="instruction">INC A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ce2"></span>6CE2</td>
+<td class="instruction">LD B,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ce3"></span>6CE3</td>
+<td class="instruction">SRL A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ce5"></span>6CE5</td>
+<td class="instruction">SRL A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ce7"></span>6CE7</td>
+<td class="instruction">ADD A,$04</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ce9"></span>6CE9</td>
+<td class="instruction">LD C,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cea"></span>6CEA</td>
+<td class="instruction">LD A,($5B22)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6ced"></span>6CED</td>
+<td class="instruction">INC A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cee"></span>6CEE</td>
+<td class="instruction">BIT 1,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cf0"></span>6CF0</td>
+<td class="instruction">JR Z,<a href="6CF6.html">$6CF6</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cf2"></span>6CF2</td>
+<td class="instruction">CALL <a href="6F47.html">$6F47</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6cf5"></span>6CF5</td>
+<td class="instruction">RET</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="6BE7.html">6BE7</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#6c77">Map</a></td>
+<td class="next">
+Next: <a href="6CF6.html">6CF6</a>
+</td>
+</tr>
+</table>
+<footer>
+<div class="release"></div>
+<div class="copyright">&copy; 1983 Durell Software LTD</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div><a href="../dec/asm/27767.html">Switch to decimal</a>.</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harrier Attack: Routine at 27894</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../skoolkit.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
+<link rel="stylesheet" type="text/css" href="../harrierattack.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-75RERFCHBG"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-75RERFCHBG');
+</script>
+</head>
+<body class="Asm-c">
+<table class="header">
+<tr>
+<td class="logo"><a href="../index.html"><img alt="logo" src="../images/logo.png" /></a></td>
+<td class="page-header">Routines</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="27767.html">27767</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#27894">Map</a></td>
+<td class="next">
+Next: <a href="27913.html">27913</a>
+</td>
+</tr>
+</table>
+<div class="description">27894: Routine at 6CF6</div>
+<table class="disassembly">
+<tr>
+<td class="routine-comment" colspan="5">
+<div class="details">
+<div class="paragraph">
+Used by the routine at <a href="27767.html">27767</a>.
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="address-2"><span id="27894"></span>27894</td>
+<td class="instruction">PUSH BC</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="27895"></span>27895</td>
+<td class="instruction">CALL <a href="27894.html#27902">27902</a></td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="27898"></span>27898</td>
+<td class="instruction">POP BC</td>
+<td class="comment-1" rowspan="1">Grab the counter off the stack.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="27899"></span>27899</td>
+<td class="instruction">DJNZ <a href="27894.html#27894">27894</a></td>
+<td class="comment-1" rowspan="1">Decrease counter by one and loop back to <a href="27894.html">27894</a> until counter is zero.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="27901"></span>27901</td>
+<td class="instruction">RET</td>
+<td class="comment-1" rowspan="1">Return.</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="27902"></span>
+<div class="comments">
+<div class="paragraph">
+This entry point is used by the routine at <a href="27767.html">27767</a>.
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="address-2"><span id="27902"></span>27902</td>
+<td class="instruction">LD BC,50</td>
+<td class="comment-1" rowspan="5">Copies $32 bytes of data from ...</td>
+</tr>
+<tr>
+<td class="address-1"><span id="27905"></span>27905</td>
+<td class="instruction">LD HL,0</td>
+</tr>
+<tr>
+<td class="address-1"><span id="27908"></span>27908</td>
+<td class="instruction">PUSH HL</td>
+</tr>
+<tr>
+<td class="address-1"><span id="27909"></span>27909</td>
+<td class="instruction">POP DE</td>
+</tr>
+<tr>
+<td class="address-1"><span id="27910"></span>27910</td>
+<td class="instruction">LDIR</td>
+</tr>
+<tr>
+<td class="address-1"><span id="27912"></span>27912</td>
+<td class="instruction">RET</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="27767.html">27767</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#27894">Map</a></td>
+<td class="next">
+Next: <a href="27913.html">27913</a>
+</td>
+</tr>
+</table>
+<footer>
+<div class="release"></div>
+<div class="copyright">&copy; 1983 Durell Software LTD</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div><a href="../../asm/6CF6.html">Switch to hexadecimal</a>.</div>
+</footer>
+</body>
+</html>

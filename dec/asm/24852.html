@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harrier Attack: Routine at 24852</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../skoolkit.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
+<link rel="stylesheet" type="text/css" href="../harrierattack.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-75RERFCHBG"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-75RERFCHBG');
+</script>
+</head>
+<body class="Asm-c">
+<table class="header">
+<tr>
+<td class="logo"><a href="../index.html"><img alt="logo" src="../images/logo.png" /></a></td>
+<td class="page-header">Routines</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="24841.html">24841</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#24852">Map</a></td>
+<td class="next">
+Next: <a href="24875.html">24875</a>
+</td>
+</tr>
+</table>
+<div class="description">24852: Routine at 6114</div>
+<table class="disassembly">
+<tr>
+<td class="routine-comment" colspan="5">
+<div class="details">
+<div class="paragraph">
+Used by the routines at <a href="24653.html">24653</a>, <a href="24875.html">24875</a>, <a href="24904.html">24904</a>, <a href="27048.html">27048</a>, <a href="27600.html">27600</a>, <a href="27623.html">27623</a>, <a href="27913.html">27913</a>, <a href="28174.html">28174</a>, <a href="28297.html">28297</a>, <a href="28917.html">28917</a>, <a href="28965.html">28965</a>, <a href="29597.html">29597</a> and <a href="30003.html">30003</a>.
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="address-2"><span id="24852"></span>24852</td>
+<td class="instruction">LD B,A</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24853"></span>24853</td>
+<td class="instruction">CALL <a href="24822.html">24822</a></td>
+<td class="comment-1" rowspan="1">Call <a href="24822.html">24822</a>.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24856"></span>24856</td>
+<td class="instruction">LD A,(DE)</td>
+<td class="comment-1" rowspan="2">Check if the current attribute byte is $2F?</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24857"></span>24857</td>
+<td class="instruction">CP 47</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24859"></span>24859</td>
+<td class="instruction">NOP</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24860"></span>24860</td>
+<td class="instruction">NOP</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24861"></span>24861</td>
+<td class="instruction">RET Z</td>
+<td class="comment-1" rowspan="1">Return if it is.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24862"></span>24862</td>
+<td class="instruction">LD A,C</td>
+<td class="comment-1" rowspan="2">Write <span class="register">C</span> to <span class="register">DE</span> (attribute buffer).</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24863"></span>24863</td>
+<td class="instruction">LD (DE),A</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24864"></span>24864</td>
+<td class="instruction">LD A,B</td>
+<td class="comment-1" rowspan="1"><span class="register">A</span>=<span class="register">B</span>.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24865"></span>24865</td>
+<td class="instruction">CALL <a href="24790.html">24790</a></td>
+<td class="comment-1" rowspan="1">Call <a href="24790.html">24790</a>.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24868"></span>24868</td>
+<td class="instruction">CALL <a href="24808.html">24808</a></td>
+<td class="comment-1" rowspan="1">Call <a href="24808.html">24808</a>.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24871"></span>24871</td>
+<td class="instruction">CALL <a href="24841.html">24841</a></td>
+<td class="comment-1" rowspan="1">Call <a href="24841.html">24841</a>.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24874"></span>24874</td>
+<td class="instruction">RET</td>
+<td class="comment-1" rowspan="1">Return.</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="24841.html">24841</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#24852">Map</a></td>
+<td class="next">
+Next: <a href="24875.html">24875</a>
+</td>
+</tr>
+</table>
+<footer>
+<div class="release"></div>
+<div class="copyright">&copy; 1983 Durell Software LTD</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div><a href="../../asm/6114.html">Switch to hexadecimal</a>.</div>
+</footer>
+</body>
+</html>

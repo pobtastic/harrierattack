@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harrier Attack: Routine at 24875</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../skoolkit.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
+<link rel="stylesheet" type="text/css" href="../harrierattack.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-75RERFCHBG"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-75RERFCHBG');
+</script>
+</head>
+<body class="Asm-c">
+<table class="header">
+<tr>
+<td class="logo"><a href="../index.html"><img alt="logo" src="../images/logo.png" /></a></td>
+<td class="page-header">Routines</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="24852.html">24852</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#24875">Map</a></td>
+<td class="next">
+Next: <a href="24904.html">24904</a>
+</td>
+</tr>
+</table>
+<div class="description">24875: Routine at 612B</div>
+<table class="disassembly">
+<tr>
+<td class="routine-comment" colspan="5">
+<div class="details">
+<div class="paragraph">
+Used by the routine at <a href="29026.html">29026</a>.
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="address-2"><span id="24875"></span>24875</td>
+<td class="instruction">PUSH AF</td>
+<td class="comment-1" rowspan="1">Stash <span class="register">AF</span> on the stack for later.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24876"></span>24876</td>
+<td class="instruction">PUSH BC</td>
+<td class="comment-1" rowspan="3">Stash <span class="register">BC</span>, <span class="register">HL</span> and <span class="register">DE</span> on the stack.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24877"></span>24877</td>
+<td class="instruction">PUSH HL</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24878"></span>24878</td>
+<td class="instruction">PUSH DE</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24879"></span>24879</td>
+<td class="instruction">CALL <a href="24852.html">24852</a></td>
+<td class="comment-1" rowspan="1">Call <a href="24852.html">24852</a>.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24882"></span>24882</td>
+<td class="instruction">POP DE</td>
+<td class="comment-1" rowspan="3">Retrieve <span class="register">DE</span>, <span class="register">HL</span> and <span class="register">BC</span> from the stack.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24883"></span>24883</td>
+<td class="instruction">POP HL</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24884"></span>24884</td>
+<td class="instruction">POP BC</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24885"></span>24885</td>
+<td class="instruction">INC L</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24886"></span>24886</td>
+<td class="instruction">LD A,L</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24887"></span>24887</td>
+<td class="instruction">AND 224</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24889"></span>24889</td>
+<td class="instruction">JR Z,<a href="24875.html#24894">24894</a></td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24891"></span>24891</td>
+<td class="instruction">XOR A</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24892"></span>24892</td>
+<td class="instruction">LD L,A</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24893"></span>24893</td>
+<td class="instruction">INC H</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="24894"></span>24894</td>
+<td class="instruction">DEC DE</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24895"></span>24895</td>
+<td class="instruction">LD A,D</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24896"></span>24896</td>
+<td class="instruction">OR E</td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24897"></span>24897</td>
+<td class="instruction">JR NZ,<a href="24875.html#24901">24901</a></td>
+<td class="comment-1" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="24899"></span>24899</td>
+<td class="instruction">POP AF</td>
+<td class="comment-1" rowspan="1">Retrieve <span class="register">AF</span> from the stack.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24900"></span>24900</td>
+<td class="instruction">RET</td>
+<td class="comment-1" rowspan="1">Return.</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="24901"></span>
+<div class="comments">
+<div class="paragraph">
+Else, loop back to the start.
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="address-2"><span id="24901"></span>24901</td>
+<td class="instruction">POP AF</td>
+<td class="comment-1" rowspan="1">Retrieve <span class="register">AF</span> from the stack.</td>
+</tr>
+<tr>
+<td class="address-1"><span id="24902"></span>24902</td>
+<td class="instruction">JR <a href="24875.html#24875">24875</a></td>
+<td class="comment-1" rowspan="1">Jump back to <a href="24875.html">24875</a>.</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="24852.html">24852</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#24875">Map</a></td>
+<td class="next">
+Next: <a href="24904.html">24904</a>
+</td>
+</tr>
+</table>
+<footer>
+<div class="release"></div>
+<div class="copyright">&copy; 1983 Durell Software LTD</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div><a href="../../asm/612B.html">Switch to hexadecimal</a>.</div>
+</footer>
+</body>
+</html>

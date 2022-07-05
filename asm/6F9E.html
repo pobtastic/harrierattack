@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harrier Attack: Routine at 6F9E</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../skoolkit.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
+<link rel="stylesheet" type="text/css" href="../harrierattack.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-75RERFCHBG"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-75RERFCHBG');
+</script>
+</head>
+<body class="Asm-c">
+<table class="header">
+<tr>
+<td class="logo"><a href="../index.html"><img alt="logo" src="../images/logo.png" /></a></td>
+<td class="page-header">Routines</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="6F47.html">6F47</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#6f9e">Map</a></td>
+<td class="next">
+Next: <a href="6FD8.html">6FD8</a>
+</td>
+</tr>
+</table>
+<div class="description">6F9E: Routine at 6F9E</div>
+<table class="disassembly">
+<tr>
+<td class="routine-comment" colspan="5">
+<div class="details">
+<div class="paragraph">
+Used by the routine at <a href="604D.html">604D</a>.
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="address-2"><span id="6f9e"></span>6F9E</td>
+<td class="instruction">LD A,($5B01)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fa1"></span>6FA1</td>
+<td class="instruction">OR A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fa2"></span>6FA2</td>
+<td class="instruction">RET NZ</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fa3"></span>6FA3</td>
+<td class="instruction">LD A,($5B10)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fa6"></span>6FA6</td>
+<td class="instruction">CP $01</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fa8"></span>6FA8</td>
+<td class="instruction">RET Z</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fa9"></span>6FA9</td>
+<td class="instruction">LD A,($5B22)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fac"></span>6FAC</td>
+<td class="instruction">OR A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fad"></span>6FAD</td>
+<td class="instruction">RET NZ</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fae"></span>6FAE</td>
+<td class="instruction">LD A,($5B34)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fb1"></span>6FB1</td>
+<td class="instruction">OR A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fb2"></span>6FB2</td>
+<td class="instruction">JR NZ,<a href="6F9E.html#6fba">$6FBA</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fb4"></span>6FB4</td>
+<td class="instruction">LD A,($5B00)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fb7"></span>6FB7</td>
+<td class="instruction">CP $0B</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fb9"></span>6FB9</td>
+<td class="instruction">RET NC</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-2"><span id="6fba"></span>6FBA</td>
+<td class="instruction">LD BC,$EFFE</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fbd"></span>6FBD</td>
+<td class="instruction">IN A,(C)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fbf"></span>6FBF</td>
+<td class="instruction">BIT 0,A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fc1"></span>6FC1</td>
+<td class="instruction">RET NZ</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fc2"></span>6FC2</td>
+<td class="instruction">LD A,$02</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fc4"></span>6FC4</td>
+<td class="instruction">LD ($5B04),A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fc7"></span>6FC7</td>
+<td class="instruction">LD ($5B01),A</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fca"></span>6FCA</td>
+<td class="instruction">LD HL,$5B0F</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fcd"></span>6FCD</td>
+<td class="instruction">CALL <a href="6BE7.html">$6BE7</a></td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fd0"></span>6FD0</td>
+<td class="instruction">LD HL,($5B20)</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fd3"></span>6FD3</td>
+<td class="instruction">INC L</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fd4"></span>6FD4</td>
+<td class="instruction">LD ($5B02),HL</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+<tr>
+<td class="address-1"><span id="6fd7"></span>6FD7</td>
+<td class="instruction">RET</td>
+<td class="comment-0" rowspan="1"></td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="6F47.html">6F47</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#6f9e">Map</a></td>
+<td class="next">
+Next: <a href="6FD8.html">6FD8</a>
+</td>
+</tr>
+</table>
+<footer>
+<div class="release"></div>
+<div class="copyright">&copy; 1983 Durell Software LTD</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div><a href="../dec/asm/28574.html">Switch to decimal</a>.</div>
+</footer>
+</body>
+</html>
