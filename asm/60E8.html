@@ -3,8 +3,6 @@
 <head>
 <title>Harrier Attack: Routine at 60E8</title>
 <meta charset="utf-8" />
-<link rel="stylesheet" type="text/css" href="../skoolkit.css" />
-<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
 <link rel="stylesheet" type="text/css" href="../harrierattack.css" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-75RERFCHBG"></script>
@@ -45,49 +43,60 @@ Used by the routines at <a href="6114.html">6114</a> and <a href="739D.html">739
 </td>
 </tr>
 <tr>
+<td class="asm-label">UDG_ADDRESS</td>
 <td class="address-2"><span id="60e8"></span>60E8</td>
 <td class="instruction">PUSH HL</td>
 <td class="comment-1" rowspan="1">Stash <span class="register">HL</span> on the stack.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="60e9"></span>60E9</td>
 <td class="instruction">LD L,A</td>
 <td class="comment-1" rowspan="8">Point <span class="register">DE</span> at the graphic data for the corresponding tile (at <a href="6580.html">$6580</a>+8*<span class="register">A</span>).</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="60ea"></span>60EA</td>
 <td class="instruction">LD H,$00</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="60ec"></span>60EC</td>
 <td class="instruction">ADD HL,HL</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="60ed"></span>60ED</td>
 <td class="instruction">ADD HL,HL</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="60ee"></span>60EE</td>
 <td class="instruction">ADD HL,HL</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="60ef"></span>60EF</td>
 <td class="instruction">LD DE,$6580</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="60f2"></span>60F2</td>
 <td class="instruction">ADD HL,DE</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="60f3"></span>60F3</td>
 <td class="instruction">EX DE,HL</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="60f4"></span>60F4</td>
 <td class="instruction">POP HL</td>
 <td class="comment-1" rowspan="1">Retrieve <span class="register">HL</span> from the stack.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="60f5"></span>60F5</td>
 <td class="instruction">RET</td>
 <td class="comment-1" rowspan="1">Return.</td>

@@ -3,8 +3,6 @@
 <head>
 <title>Harrier Attack: Routine at 24841</title>
 <meta charset="utf-8" />
-<link rel="stylesheet" type="text/css" href="../skoolkit.css" />
-<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
 <link rel="stylesheet" type="text/css" href="../harrierattack.css" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-75RERFCHBG"></script>
@@ -55,40 +53,49 @@ On entry <span class="register">BC</span> should point to a screen address and <
 </td>
 </tr>
 <tr>
+<td class="asm-label">UDG_DRAW</td>
 <td class="address-2"><span id="24841"></span>24841</td>
 <td class="instruction">LD L,C</td>
 <td class="comment-1" rowspan="2">Copies <span class="register">BC</span> containing the screen address into <span class="register">HL</span>.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24842"></span>24842</td>
 <td class="instruction">LD H,B</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24843"></span>24843</td>
 <td class="instruction">LD B,8</td>
 <td class="comment-1" rowspan="6">Draw the UDG graphic data to the screen.</td>
 </tr>
 <tr>
+<td class="asm-label">UDG_DRAW_LOOP</td>
 <td class="address-2"><span id="24845"></span>24845</td>
 <td class="instruction">LD A,(DE)</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24846"></span>24846</td>
 <td class="instruction">LD (HL),A</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24847"></span>24847</td>
 <td class="instruction">INC H</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24848"></span>24848</td>
 <td class="instruction">INC DE</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24849"></span>24849</td>
-<td class="instruction">DJNZ <a href="24841.html#24845">24845</a></td>
+<td class="instruction">DJNZ <a href="24841.html#24845">UDG_DRAW_LOOP</a></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24851"></span>24851</td>
 <td class="instruction">RET</td>
 <td class="comment-1" rowspan="1">Return.</td>

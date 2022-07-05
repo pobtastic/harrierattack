@@ -3,8 +3,6 @@
 <head>
 <title>Harrier Attack: Routine at 6007</title>
 <meta charset="utf-8" />
-<link rel="stylesheet" type="text/css" href="../skoolkit.css" />
-<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
 <link rel="stylesheet" type="text/css" href="../harrierattack.css" />
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-75RERFCHBG"></script>
@@ -45,145 +43,178 @@ Used by the routine at <a href="6000.html">6000</a>.
 </td>
 </tr>
 <tr>
+<td class="asm-label">ENTRY</td>
 <td class="address-2"><span id="6007"></span>6007</td>
 <td class="instruction">LD HL,$581F</td>
 <td class="comment-1" rowspan="16"><span class="register">HL</span>=$581F</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="600a"></span>600A</td>
 <td class="instruction">LD DE,$001F</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="600d"></span>600D</td>
 <td class="instruction">LD B,$0F</td>
 </tr>
 <tr>
+<td class="asm-label">LOOP</td>
 <td class="address-2"><span id="600f"></span>600F</td>
 <td class="instruction">LD A,(HL)</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6010"></span>6010</td>
 <td class="instruction">AND $38</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6012"></span>6012</td>
 <td class="instruction">RRA</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6013"></span>6013</td>
 <td class="instruction">RRA</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6014"></span>6014</td>
 <td class="instruction">RRA</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6015"></span>6015</td>
 <td class="instruction">LD C,A</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6016"></span>6016</td>
 <td class="instruction">LD A,(HL)</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6017"></span>6017</td>
 <td class="instruction">AND $F8</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6019"></span>6019</td>
 <td class="instruction">OR C</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="601a"></span>601A</td>
 <td class="instruction">INC HL</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="601b"></span>601B</td>
 <td class="instruction">LD (HL),A</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="601c"></span>601C</td>
 <td class="instruction">ADD HL,DE</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="601d"></span>601D</td>
-<td class="instruction">DJNZ <a href="6007.html#600f">$600F</a></td>
+<td class="instruction">DJNZ <a href="6007.html#600f">LOOP</a></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="601f"></span>601F</td>
 <td class="instruction">CALL <a href="6E89.html">$6E89</a></td>
 <td class="comment-1" rowspan="1">Call <a href="6E89.html">6E89</a>.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6022"></span>6022</td>
 <td class="instruction">LD A,($5B21)</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6025"></span>6025</td>
 <td class="instruction">BIT 3,A</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6027"></span>6027</td>
 <td class="instruction">CALL Z,<a href="6DD0.html">$6DD0</a></td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="602a"></span>602A</td>
 <td class="instruction">LD BC,$0100</td>
 <td class="comment-1" rowspan="4">Copies $100 bytes of data from $5800</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="602d"></span>602D</td>
 <td class="instruction">LD HL,$5801</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6030"></span>6030</td>
 <td class="instruction">LD DE,$5800</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6033"></span>6033</td>
 <td class="instruction">LDIR</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6035"></span>6035</td>
 <td class="instruction">LD BC,$0800</td>
 <td class="comment-1" rowspan="4">Copies $800 bytes of data from ...</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6038"></span>6038</td>
 <td class="instruction">LD HL,$4001</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="603b"></span>603B</td>
 <td class="instruction">LD DE,$4000</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="603e"></span>603E</td>
 <td class="instruction">LDIR</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6040"></span>6040</td>
 <td class="instruction">BIT 3,A</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6042"></span>6042</td>
 <td class="instruction">CALL Z,<a href="6D09.html">$6D09</a></td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6045"></span>6045</td>
 <td class="instruction">LD A,($5B21)</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="6048"></span>6048</td>
 <td class="instruction">BIT 3,A</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="604a"></span>604A</td>
 <td class="instruction">CALL NZ,<a href="6DD0.html">$6DD0</a></td>
 <td class="comment-1" rowspan="1"></td>
