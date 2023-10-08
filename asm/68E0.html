@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Harrier Attack: Unused RAM at 68E0</title>
+<title>Harrier Attack: Data at 68E0</title>
 <meta charset="utf-8" />
 <link rel="stylesheet" type="text/css" href="../harrierattack.css" />
 <link rel="stylesheet" type="text/css" href="../skoolkit.css" />
@@ -16,11 +16,11 @@ gtag('js', new Date());
 gtag('config', 'G-75RERFCHBG');
 </script>
 </head>
-<body class="Asm-s">
+<body class="Asm-b">
 <table class="header">
 <tr>
 <td class="logo"><a href="../index.html"><img alt="logo" src="../images/logo.png" /></a></td>
-<td class="page-header">Unused</td>
+<td class="page-header">Data</td>
 </tr>
 </table>
 <table class="asm-navigation">
@@ -34,18 +34,1291 @@ Next: <a href="69A8.html">69A8</a>
 </td>
 </tr>
 </table>
-<div class="description">68E0: Buffer Of Some Kind...</div>
+<div class="description">68E0: Font</div>
 <table class="disassembly">
 <tr>
 <td class="routine-comment" colspan="5">
 <div class="details">
+<div class="paragraph">
+Copied from the Spectrum ROM, see <a href="7162.html#716d">716D</a>.
+</div>
 </div>
 </td>
 </tr>
 <tr>
+<td class="routine-comment" colspan="5">
+<span id="68e0"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#64;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label">Font</td>
 <td class="address-1"><span id="68e0"></span>68E0</td>
-<td class="instruction">DEFS $C8</td>
-<td class="comment-0" rowspan="1"></td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26848_56x4" src="../images/udgs/udg26848_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68e1"></span>68E1</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68e2"></span>68E2</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68e3"></span>68E3</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68e4"></span>68E4</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68e5"></span>68E5</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68e6"></span>68E6</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68e7"></span>68E7</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="68e8"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#65;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68e8"></span>68E8</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26856_56x4" src="../images/udgs/udg26856_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68e9"></span>68E9</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68ea"></span>68EA</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68eb"></span>68EB</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68ec"></span>68EC</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68ed"></span>68ED</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68ee"></span>68EE</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68ef"></span>68EF</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="68f0"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#66;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68f0"></span>68F0</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26864_56x4" src="../images/udgs/udg26864_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68f1"></span>68F1</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68f2"></span>68F2</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68f3"></span>68F3</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68f4"></span>68F4</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68f5"></span>68F5</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68f6"></span>68F6</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68f7"></span>68F7</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="68f8"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#67;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68f8"></span>68F8</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26872_56x4" src="../images/udgs/udg26872_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68f9"></span>68F9</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68fa"></span>68FA</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68fb"></span>68FB</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68fc"></span>68FC</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68fd"></span>68FD</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68fe"></span>68FE</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="68ff"></span>68FF</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6900"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#68;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6900"></span>6900</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26880_56x4" src="../images/udgs/udg26880_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6901"></span>6901</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6902"></span>6902</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6903"></span>6903</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6904"></span>6904</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6905"></span>6905</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6906"></span>6906</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6907"></span>6907</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6908"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#69;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6908"></span>6908</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26888_56x4" src="../images/udgs/udg26888_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6909"></span>6909</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="690a"></span>690A</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="690b"></span>690B</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="690c"></span>690C</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="690d"></span>690D</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="690e"></span>690E</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="690f"></span>690F</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6910"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#70;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6910"></span>6910</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26896_56x4" src="../images/udgs/udg26896_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6911"></span>6911</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6912"></span>6912</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6913"></span>6913</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6914"></span>6914</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6915"></span>6915</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6916"></span>6916</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6917"></span>6917</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6918"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#71;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6918"></span>6918</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26904_56x4" src="../images/udgs/udg26904_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6919"></span>6919</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="691a"></span>691A</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="691b"></span>691B</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="691c"></span>691C</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="691d"></span>691D</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="691e"></span>691E</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="691f"></span>691F</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6920"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#72;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6920"></span>6920</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26912_56x4" src="../images/udgs/udg26912_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6921"></span>6921</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6922"></span>6922</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6923"></span>6923</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6924"></span>6924</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6925"></span>6925</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6926"></span>6926</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6927"></span>6927</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6928"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#73;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6928"></span>6928</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26920_56x4" src="../images/udgs/udg26920_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6929"></span>6929</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="692a"></span>692A</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="692b"></span>692B</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="692c"></span>692C</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="692d"></span>692D</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="692e"></span>692E</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="692f"></span>692F</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6930"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#74;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6930"></span>6930</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26928_56x4" src="../images/udgs/udg26928_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6931"></span>6931</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6932"></span>6932</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6933"></span>6933</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6934"></span>6934</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6935"></span>6935</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6936"></span>6936</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6937"></span>6937</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6938"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#75;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6938"></span>6938</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26936_56x4" src="../images/udgs/udg26936_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6939"></span>6939</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="693a"></span>693A</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="693b"></span>693B</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="693c"></span>693C</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="693d"></span>693D</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="693e"></span>693E</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="693f"></span>693F</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6940"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#76;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6940"></span>6940</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26944_56x4" src="../images/udgs/udg26944_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6941"></span>6941</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6942"></span>6942</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6943"></span>6943</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6944"></span>6944</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6945"></span>6945</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6946"></span>6946</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6947"></span>6947</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6948"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#77;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6948"></span>6948</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26952_56x4" src="../images/udgs/udg26952_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6949"></span>6949</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="694a"></span>694A</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="694b"></span>694B</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="694c"></span>694C</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="694d"></span>694D</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="694e"></span>694E</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="694f"></span>694F</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6950"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#78;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6950"></span>6950</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26960_56x4" src="../images/udgs/udg26960_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6951"></span>6951</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6952"></span>6952</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6953"></span>6953</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6954"></span>6954</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6955"></span>6955</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6956"></span>6956</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6957"></span>6957</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6958"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#79;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6958"></span>6958</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26968_56x4" src="../images/udgs/udg26968_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6959"></span>6959</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="695a"></span>695A</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="695b"></span>695B</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="695c"></span>695C</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="695d"></span>695D</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="695e"></span>695E</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="695f"></span>695F</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6960"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#80;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6960"></span>6960</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26976_56x4" src="../images/udgs/udg26976_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6961"></span>6961</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6962"></span>6962</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6963"></span>6963</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6964"></span>6964</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6965"></span>6965</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6966"></span>6966</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6967"></span>6967</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6968"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#81;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6968"></span>6968</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26984_56x4" src="../images/udgs/udg26984_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6969"></span>6969</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="696a"></span>696A</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="696b"></span>696B</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="696c"></span>696C</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="696d"></span>696D</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="696e"></span>696E</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="696f"></span>696F</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6970"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#82;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6970"></span>6970</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg26992_56x4" src="../images/udgs/udg26992_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6971"></span>6971</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6972"></span>6972</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6973"></span>6973</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6974"></span>6974</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6975"></span>6975</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6976"></span>6976</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6977"></span>6977</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6978"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#83;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6978"></span>6978</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg27000_56x4" src="../images/udgs/udg27000_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6979"></span>6979</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="697a"></span>697A</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="697b"></span>697B</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="697c"></span>697C</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="697d"></span>697D</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="697e"></span>697E</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="697f"></span>697F</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6980"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#84;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6980"></span>6980</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg27008_56x4" src="../images/udgs/udg27008_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6981"></span>6981</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6982"></span>6982</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6983"></span>6983</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6984"></span>6984</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6985"></span>6985</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6986"></span>6986</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6987"></span>6987</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6988"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#85;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6988"></span>6988</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg27016_56x4" src="../images/udgs/udg27016_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6989"></span>6989</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="698a"></span>698A</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="698b"></span>698B</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="698c"></span>698C</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="698d"></span>698D</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="698e"></span>698E</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="698f"></span>698F</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6990"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#86;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6990"></span>6990</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg27024_56x4" src="../images/udgs/udg27024_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6991"></span>6991</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6992"></span>6992</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6993"></span>6993</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6994"></span>6994</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6995"></span>6995</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6996"></span>6996</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6997"></span>6997</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="6998"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#87;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6998"></span>6998</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg27032_56x4" src="../images/udgs/udg27032_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="6999"></span>6999</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="699a"></span>699A</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="699b"></span>699B</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="699c"></span>699C</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="699d"></span>699D</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="699e"></span>699E</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="699f"></span>699F</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="69a0"></span>
+<div class="comments">
+<div class="paragraph">
+CHARACTER: "&#88;".
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="69a0"></span>69A0</td>
+<td class="instruction">DEFB %00000000</td>
+<td class="comment-1" rowspan="8"><img alt="udg27040_56x4" src="../images/udgs/udg27040_56x4.png" /></td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="69a1"></span>69A1</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="69a2"></span>69A2</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="69a3"></span>69A3</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="69a4"></span>69A4</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="69a5"></span>69A5</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="69a6"></span>69A6</td>
+<td class="instruction">DEFB %00000000</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="69a7"></span>69A7</td>
+<td class="instruction">DEFB %00000000</td>
 </tr>
 </table>
 <table class="asm-navigation">
@@ -61,8 +1334,8 @@ Next: <a href="69A8.html">69A8</a>
 </table>
 <footer>
 <div class="release"></div>
-<div class="copyright">&copy; 1983 Durell Software LTD</div>
-<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div class="copyright">&copy; 1983 Durell Software LTD &copy; 2023 ArcadeGeek LTD.</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.10.</div>
 <div><a href="../dec/asm/26848.html">Switch to decimal</a>.</div>
 </footer>
 </body>

@@ -34,7 +34,7 @@ Next: <a href="24852.html">24852</a>
 </td>
 </tr>
 </table>
-<div class="description">24841: Draw UDG.</div>
+<div class="description">24841: Draw UDG</div>
 <table class="disassembly">
 <tr>
 <td class="routine-comment" colspan="5">
@@ -56,7 +56,7 @@ On entry <span class="register">BC</span> should point to a screen address and <
 </td>
 </tr>
 <tr>
-<td class="asm-label">UDG_DRAW</td>
+<td class="asm-label">Draw_UDG</td>
 <td class="address-2"><span id="24841"></span>24841</td>
 <td class="instruction">LD L,C</td>
 <td class="comment-1" rowspan="2">Copies <span class="register">BC</span> containing the screen address into <span class="register">HL</span>.</td>
@@ -73,7 +73,7 @@ On entry <span class="register">BC</span> should point to a screen address and <
 <td class="comment-1" rowspan="6">Draw the UDG graphic data to the screen.</td>
 </tr>
 <tr>
-<td class="asm-label">UDG_DRAW_LOOP</td>
+<td class="asm-label">Draw_UDG_Loop</td>
 <td class="address-2"><span id="24845"></span>24845</td>
 <td class="instruction">LD A,(DE)</td>
 </tr>
@@ -95,7 +95,7 @@ On entry <span class="register">BC</span> should point to a screen address and <
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="24849"></span>24849</td>
-<td class="instruction">DJNZ <a href="24841.html#24845">UDG_DRAW_LOOP</a></td>
+<td class="instruction">DJNZ <a href="24841.html#24845">Draw_UDG_Loop</a></td>
 </tr>
 <tr>
 <td class="asm-label"></td>
@@ -117,8 +117,8 @@ Next: <a href="24852.html">24852</a>
 </table>
 <footer>
 <div class="release"></div>
-<div class="copyright">&copy; 1983 Durell Software LTD</div>
-<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div class="copyright">&copy; 1983 Durell Software LTD &copy; 2023 ArcadeGeek LTD.</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.10.</div>
 <div><a href="../../asm/6109.html">Switch to hexadecimal</a>.</div>
 </footer>
 </body>

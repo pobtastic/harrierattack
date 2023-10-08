@@ -34,7 +34,7 @@ Next: <a href="24808.html">24808</a>
 </td>
 </tr>
 </table>
-<div class="description">24790: Routine at 60D6</div>
+<div class="description">24790: Convert To Screen Buffer Address</div>
 <table class="disassembly">
 <tr>
 <td class="routine-comment" colspan="5">
@@ -50,81 +50,96 @@ Used by the routines at <a href="24852.html">24852</a> and <a href="29597.html">
 <span id="24790"></span>
 <div class="comments">
 <div class="paragraph">
-On entry <span class="register">HL</span> is a number between 0-$F20 corresponding to the playarea.
+On entry <span class="register">HL</span> is a number between 0000-3872 corresponding to the playarea.
 </div>
 </div>
 </td>
 </tr>
 <tr>
+<td class="asm-label">ScreenBufferAddress</td>
 <td class="address-2"><span id="24790"></span>24790</td>
 <td class="instruction">PUSH AF</td>
 <td class="comment-1" rowspan="1">Stash <span class="register">AF</span> on the stack.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24791"></span>24791</td>
 <td class="instruction">LD A,H</td>
-<td class="comment-1" rowspan="1"></td>
+<td class="comment-1" rowspan="1"><span class="register">A</span>=<span class="register">H</span>.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24792"></span>24792</td>
 <td class="instruction">RRA</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24793"></span>24793</td>
 <td class="instruction">RRA</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24794"></span>24794</td>
 <td class="instruction">RRA</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24795"></span>24795</td>
 <td class="instruction">RRA</td>
 <td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24796"></span>24796</td>
-<td class="instruction">AND 224</td>
-<td class="comment-1" rowspan="1"></td>
+<td class="instruction">AND %11100000</td>
+<td class="comment-1" rowspan="1">Keep only bits 5-7.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24798"></span>24798</td>
 <td class="instruction">OR L</td>
-<td class="comment-1" rowspan="1"></td>
+<td class="comment-1" rowspan="1">Set the bits from <span class="register">L</span>.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24799"></span>24799</td>
 <td class="instruction">LD C,A</td>
-<td class="comment-1" rowspan="1"></td>
+<td class="comment-1" rowspan="1"><span class="register">C</span>=<span class="register">A</span>.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24800"></span>24800</td>
 <td class="instruction">LD A,H</td>
-<td class="comment-1" rowspan="1"></td>
+<td class="comment-1" rowspan="1"><span class="register">A</span>=<span class="register">H</span>.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24801"></span>24801</td>
-<td class="instruction">AND 24</td>
-<td class="comment-1" rowspan="1"></td>
+<td class="instruction">AND %00011000</td>
+<td class="comment-1" rowspan="1">Keep only bits 3 and 4.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24803"></span>24803</td>
-<td class="instruction">OR 64</td>
+<td class="instruction">OR %01000000</td>
 <td class="comment-1" rowspan="2">Set bit 6 of <span class="register">B</span> which converts <span class="register">BC</span> to a screen address.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24805"></span>24805</td>
 <td class="instruction">LD B,A</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24806"></span>24806</td>
 <td class="instruction">POP AF</td>
 <td class="comment-1" rowspan="1">Retrieve <span class="register">AF</span> from the stack.</td>
 </tr>
 <tr>
+<td class="asm-label"></td>
 <td class="address-1"><span id="24807"></span>24807</td>
 <td class="instruction">RET</td>
 <td class="comment-1" rowspan="1">Return.</td>
@@ -143,8 +158,8 @@ Next: <a href="24808.html">24808</a>
 </table>
 <footer>
 <div class="release"></div>
-<div class="copyright">&copy; 1983 Durell Software LTD</div>
-<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div class="copyright">&copy; 1983 Durell Software LTD &copy; 2023 ArcadeGeek LTD.</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.10.</div>
 <div><a href="../../asm/60D6.html">Switch to hexadecimal</a>.</div>
 </footer>
 </body>

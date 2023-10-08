@@ -49,32 +49,37 @@ Used by the routine at <a href="6000.html">6000</a>.
 <td class="asm-label">ENTRY</td>
 <td class="address-2"><span id="6007"></span>6007</td>
 <td class="instruction">LD HL,$581F</td>
-<td class="comment-1" rowspan="16"><span class="register">HL</span>=$581F</td>
+<td class="comment-1" rowspan="1"><span class="register">HL</span>=581F.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="600a"></span>600A</td>
 <td class="instruction">LD DE,$001F</td>
+<td class="comment-1" rowspan="1"><span class="register">DE</span>=001F.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="600d"></span>600D</td>
 <td class="instruction">LD B,$0F</td>
+<td class="comment-1" rowspan="1"><span class="register">B</span>=0F (counter).</td>
 </tr>
 <tr>
 <td class="asm-label">LOOP</td>
 <td class="address-2"><span id="600f"></span>600F</td>
 <td class="instruction">LD A,(HL)</td>
+<td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6010"></span>6010</td>
-<td class="instruction">AND $38</td>
+<td class="instruction">AND %00111000</td>
+<td class="comment-1" rowspan="1">Keep only bits 3-5 (PAPER).</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6012"></span>6012</td>
 <td class="instruction">RRA</td>
+<td class="comment-1" rowspan="3">Shift the PAPER bits to the "front".</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
@@ -90,41 +95,49 @@ Used by the routine at <a href="6000.html">6000</a>.
 <td class="asm-label"></td>
 <td class="address-1"><span id="6015"></span>6015</td>
 <td class="instruction">LD C,A</td>
+<td class="comment-1" rowspan="1">Store the result in <span class="register">C</span>.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6016"></span>6016</td>
 <td class="instruction">LD A,(HL)</td>
+<td class="comment-1" rowspan="1"></td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6017"></span>6017</td>
-<td class="instruction">AND $F8</td>
+<td class="instruction">AND %11111000</td>
+<td class="comment-1" rowspan="1">Keep only bits 3-7 (PAPER, BRIGHT and FLASH bits).</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6019"></span>6019</td>
 <td class="instruction">OR C</td>
+<td class="comment-1" rowspan="1">Set the bits from <span class="register">C</span>.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="601a"></span>601A</td>
 <td class="instruction">INC HL</td>
+<td class="comment-1" rowspan="1">Increment <span class="register">HL</span> by one.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="601b"></span>601B</td>
 <td class="instruction">LD (HL),A</td>
+<td class="comment-1" rowspan="1">Write <span class="register">A</span> to *<span class="register">HL</span>.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="601c"></span>601C</td>
 <td class="instruction">ADD HL,DE</td>
+<td class="comment-1" rowspan="1"><span class="register">HL</span>+=<span class="register">DE</span>.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="601d"></span>601D</td>
 <td class="instruction">DJNZ <a href="6007.html#600f">LOOP</a></td>
+<td class="comment-1" rowspan="1">Decrease counter by one and loop back to <a href="6007.html#600f">LOOP</a> until counter is zero.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
@@ -154,7 +167,7 @@ Used by the routine at <a href="6000.html">6000</a>.
 <td class="asm-label"></td>
 <td class="address-1"><span id="602a"></span>602A</td>
 <td class="instruction">LD BC,$0100</td>
-<td class="comment-1" rowspan="4">Copies $100 bytes of data from $5800</td>
+<td class="comment-1" rowspan="4">Copies 0100 bytes of data from 5800</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
@@ -175,7 +188,7 @@ Used by the routine at <a href="6000.html">6000</a>.
 <td class="asm-label"></td>
 <td class="address-1"><span id="6035"></span>6035</td>
 <td class="instruction">LD BC,$0800</td>
-<td class="comment-1" rowspan="4">Copies $800 bytes of data from ...</td>
+<td class="comment-1" rowspan="4">Copies 0800 bytes of data from ...</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
@@ -236,8 +249,8 @@ Next: <a href="604D.html">604D</a>
 </table>
 <footer>
 <div class="release"></div>
-<div class="copyright">&copy; 1983 Durell Software LTD</div>
-<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div class="copyright">&copy; 1983 Durell Software LTD &copy; 2023 ArcadeGeek LTD.</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.10.</div>
 <div><a href="../dec/asm/24583.html">Switch to decimal</a>.</div>
 </footer>
 </body>

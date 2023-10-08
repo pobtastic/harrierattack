@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harrier Attack: Text at 30710</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../harrierattack.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-75RERFCHBG"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-75RERFCHBG');
+</script>
+</head>
+<body class="Asm-t">
+<table class="header">
+<tr>
+<td class="logo"><a href="../index.html"><img alt="logo" src="../images/logo.png" /></a></td>
+<td class="page-header">Messages</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="30401.html">30401</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#30710">Map</a></td>
+<td class="next">
+Next: <a href="30864.html">30864</a>
+</td>
+</tr>
+</table>
+<div class="description">30710: Messaging: #1</div>
+<table class="disassembly">
+<tr>
+<td class="routine-comment" colspan="5">
+<div class="details">
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label">Messaging_SplashScreen</td>
+<td class="address-1"><span id="30710"></span>30710</td>
+<td class="instruction">DEFB 16,9</td>
+<td class="comment-1" rowspan="1">INK $09 (contrast - i.e. "white")</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30712"></span>30712</td>
+<td class="instruction">DEFB 17,0</td>
+<td class="comment-1" rowspan="1">PAPER $00 ("black")</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30714"></span>30714</td>
+<td class="instruction">DEFB 22,0,0</td>
+<td class="comment-1" rowspan="1">AT $00,$00</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30717"></span>30717</td>
+<td class="instruction">DEFB 23,31,0</td>
+<td class="comment-1" rowspan="1">TAB</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30720"></span>30720</td>
+<td class="instruction">DEFB 23,6,0</td>
+<td class="comment-1" rowspan="1">TAB</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30723"></span>30723</td>
+<td class="instruction">DEFM "* HARRIER ATTACK *"</td>
+<td class="comment-1" rowspan="1">Harrier Attack Game Title</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30741"></span>30741</td>
+<td class="instruction">DEFB 23,6,0</td>
+<td class="comment-1" rowspan="1">TAB</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30744"></span>30744</td>
+<td class="instruction">DEFB 23,0,0</td>
+<td class="comment-1" rowspan="1">TAB</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30747"></span>30747</td>
+<td class="instruction">DEFB 17,6</td>
+<td class="comment-1" rowspan="1">PAPER $06 ("yellow")</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30749"></span>30749</td>
+<td class="instruction">DEFM "  NAME    LEVEL   HITS   SCORE    "</td>
+<td class="comment-1" rowspan="1">"NAME", "LEVEL", "HITS", "SCORE" texts.</td>
+</tr>
+<tr>
+<td class="routine-comment" colspan="5">
+<span id="30783"></span>
+<div class="comments">
+<div class="paragraph">
+Block #2
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30783"></span>30783</td>
+<td class="instruction">DEFM "                               "</td>
+<td class="comment-1" rowspan="1">Whitespace or buffer?</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30814"></span>30814</td>
+<td class="instruction">DEFB 17,0</td>
+<td class="comment-1" rowspan="1">PAPER $00 ("black")</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30816"></span>30816</td>
+<td class="instruction">DEFB 19,1</td>
+<td class="comment-1" rowspan="1">BRIGHT ON</td>
+</tr>
+<tr>
+<td class="asm-label">TEXT_SKILL_LEVEL</td>
+<td class="address-1"><span id="30818"></span>30818</td>
+<td class="instruction">DEFM "    ENTER SKILL LEVEL (1TO5)    "</td>
+<td class="comment-1" rowspan="1">"ENTER SKILL LEVEL (1TO5)" text.</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30850"></span>30850</td>
+<td class="instruction">DEFB 19,0</td>
+<td class="comment-1" rowspan="1">ENTER (i.e. "NEWLINE")</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30852"></span>30852</td>
+<td class="instruction">DEFB 23,1,0</td>
+<td class="comment-1" rowspan="1">TAB</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30855"></span>30855</td>
+<td class="instruction">DEFB 32</td>
+<td class="comment-1" rowspan="1">SPACE</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30856"></span>30856</td>
+<td class="instruction">DEFB 8</td>
+<td class="comment-1" rowspan="1">CURSOR LEFT</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30857"></span>30857</td>
+<td class="instruction">DEFB 8</td>
+<td class="comment-1" rowspan="1">CURSOR LEFT</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30858"></span>30858</td>
+<td class="instruction">DEFB 18,1</td>
+<td class="comment-1" rowspan="1">FLASH ON</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30860"></span>30860</td>
+<td class="instruction">DEFB 32</td>
+<td class="comment-1" rowspan="1">SPACE</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30861"></span>30861</td>
+<td class="instruction">DEFB 18,0</td>
+<td class="comment-1" rowspan="1">FLASH OFF</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="30863"></span>30863</td>
+<td class="instruction">DEFB 8</td>
+<td class="comment-1" rowspan="1">CURSOR LEFT</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="30401.html">30401</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#30710">Map</a></td>
+<td class="next">
+Next: <a href="30864.html">30864</a>
+</td>
+</tr>
+</table>
+<footer>
+<div class="release"></div>
+<div class="copyright">&copy; 1983 Durell Software LTD &copy; 2023 ArcadeGeek LTD.</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.10.</div>
+<div><a href="../../asm/77F6.html">Switch to hexadecimal</a>.</div>
+</footer>
+</body>
+</html>

@@ -30,33 +30,32 @@ Prev: <a href="6EF0.html">6EF0</a>
 </td>
 <td class="up">Up: <a href="../maps/all.html#6f47">Map</a></td>
 <td class="next">
-Next: <a href="6F9E.html">6F9E</a>
+Next: <a href="6F63.html">6F63</a>
 </td>
 </tr>
 </table>
-<div class="description">6F47: Crash Sound/ Border Flash.</div>
+<div class="description">6F47: Crash Sound/ Border Flash</div>
 <table class="disassembly">
 <tr>
 <td class="routine-comment" colspan="5">
 <div class="details">
 <div class="paragraph">
-Used by the routines at <a href="6C77.html">6C77</a>, <a href="72CA.html">72CA</a>, <a href="7533.html">7533</a> and <a href="76C1.html">76C1</a>.
+Used by the routines at <a href="6C77.html">6C77</a>, <a href="6F63.html">6F63</a>, <a href="72CA.html">72CA</a>, <a href="7533.html">7533</a> and <a href="78B0.html">78B0</a>.
 </div>
 </div>
+<table class="input">
+<tr class="asm-input-header">
+<th colspan="2">Input</th>
+</tr>
+<tr>
+<td class="register">C</td>
+<td class="register-desc">Duration counter</td>
+</tr>
+</table>
 </td>
 </tr>
 <tr>
-<td class="routine-comment" colspan="5">
-<span id="6f47"></span>
-<div class="comments">
-<div class="paragraph">
-On entry <span class="register">C</span> is a counter for how long the effect will last.
-</div>
-</div>
-</td>
-</tr>
-<tr>
-<td class="asm-label">CRASH_SOUND</td>
+<td class="asm-label">Sounds_Crash</td>
 <td class="address-2"><span id="6f47"></span>6F47</td>
 <td class="instruction">LD HL,$6A1C</td>
 <td class="comment-1" rowspan="1">Point to <a href="6A1C.html">6A1C</a>.</td>
@@ -65,10 +64,10 @@ On entry <span class="register">C</span> is a counter for how long the effect wi
 <td class="asm-label"></td>
 <td class="address-1"><span id="6f4a"></span>6F4A</td>
 <td class="instruction">XOR A</td>
-<td class="comment-1" rowspan="1"><span class="register">A</span>=$00.</td>
+<td class="comment-1" rowspan="1"><span class="register">A</span>=00.</td>
 </tr>
 <tr>
-<td class="asm-label">CRASH_SOUND_LOOP</td>
+<td class="asm-label">Sounds_Crash_Loop</td>
 <td class="address-2"><span id="6f4b"></span>6F4B</td>
 <td class="instruction">LD B,(HL)</td>
 <td class="comment-1" rowspan="1"><span class="register">B</span>=Fetch the sound data byte.</td>
@@ -83,19 +82,18 @@ On entry <span class="register">C</span> is a counter for how long the effect wi
 <td class="asm-label"></td>
 <td class="address-1"><span id="6f4d"></span>6F4D</td>
 <td class="instruction">DJNZ <a href="6F47.html#6f4d">$6F4D</a></td>
-<td class="comment-1" rowspan="1"><a href="6F47.html#6f4d">6F4D</a>.</td>
+<td class="comment-1" rowspan="1">Decrease counter by one and loop back to <a href="6F47.html#6f4d">6F4D</a> until counter is zero.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6f4f"></span>6F4F</td>
 <td class="instruction">SET 4,A</td>
-<td class="comment-1" rowspan="1"><span class="register">A</span>=$10.</td>
+<td class="comment-1" rowspan="2">Turn the speaker on (set bit 4) and set the border colour.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6f51"></span>6F51</td>
 <td class="instruction">OUT ($FE),A</td>
-<td class="comment-1" rowspan="1">Border colour.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
@@ -113,43 +111,42 @@ On entry <span class="register">C</span> is a counter for how long the effect wi
 <td class="asm-label"></td>
 <td class="address-1"><span id="6f55"></span>6F55</td>
 <td class="instruction">DJNZ <a href="6F47.html#6f55">$6F55</a></td>
-<td class="comment-1" rowspan="1"><a href="6F47.html#6f55">6F55</a>.</td>
+<td class="comment-1" rowspan="1">Decrease counter by one and loop back to <a href="6F47.html#6f55">6F55</a> until counter is zero.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6f57"></span>6F57</td>
 <td class="instruction">RES 4,A</td>
-<td class="comment-1" rowspan="1"><span class="register">A</span>=$00.</td>
+<td class="comment-1" rowspan="2">Turn the speaker off (reset bit 4) and set the border colour.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6f59"></span>6F59</td>
 <td class="instruction">OUT ($FE),A</td>
-<td class="comment-1" rowspan="1">Border colour.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6f5b"></span>6F5B</td>
 <td class="instruction">INC A</td>
-<td class="comment-1" rowspan="1"><span class="register">A</span>=$01.</td>
+<td class="comment-1" rowspan="1">Increment <span class="register">A</span> by one.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6f5c"></span>6F5C</td>
 <td class="instruction">DEC C</td>
-<td class="comment-1" rowspan="1"></td>
+<td class="comment-1" rowspan="1">Decrease <span class="register">C</span> by one.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6f5d"></span>6F5D</td>
-<td class="instruction">JR NZ,<a href="6F47.html#6f4b">CRASH_SOUND_LOOP</a></td>
-<td class="comment-1" rowspan="1"></td>
+<td class="instruction">JR NZ,<a href="6F47.html#6f4b">Sounds_Crash_Loop</a></td>
+<td class="comment-1" rowspan="1">Jump back to <a href="6F47.html#6f4b">Sounds_Crash_Loop</a> until <span class="register">C</span> is zero.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
 <td class="address-1"><span id="6f5f"></span>6F5F</td>
 <td class="instruction">XOR A</td>
-<td class="comment-1" rowspan="1"><span class="register">A</span>=$00.</td>
+<td class="comment-1" rowspan="1"><span class="register">A</span>=00.</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
@@ -163,196 +160,6 @@ On entry <span class="register">C</span> is a counter for how long the effect wi
 <td class="instruction">RET</td>
 <td class="comment-1" rowspan="1">Return.</td>
 </tr>
-<tr>
-<td class="routine-comment" colspan="5">
-<span id="6f63"></span>
-<div class="comments">
-<div class="paragraph">
-This entry point is used by the routines at <a href="6E89.html">6E89</a>, <a href="6EF0.html">6EF0</a> and <a href="6FFD.html">6FFD</a>.
-</div>
-</div>
-</td>
-</tr>
-<tr>
-<td class="asm-label">CRASH_SOUND_0</td>
-<td class="address-2"><span id="6f63"></span>6F63</td>
-<td class="instruction">PUSH HL</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f64"></span>6F64</td>
-<td class="instruction">PUSH AF</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f65"></span>6F65</td>
-<td class="instruction">LD C,$28</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f67"></span>6F67</td>
-<td class="instruction">CALL <a href="6F47.html#6f47">CRASH_SOUND</a></td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f6a"></span>6F6A</td>
-<td class="instruction">POP AF</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f6b"></span>6F6B</td>
-<td class="instruction">OR A</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f6c"></span>6F6C</td>
-<td class="instruction">JR NZ,<a href="6F47.html#6f70">CRASH_SOUND_1</a></td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f6e"></span>6F6E</td>
-<td class="instruction">POP HL</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f6f"></span>6F6F</td>
-<td class="instruction">RET</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label">CRASH_SOUND_1</td>
-<td class="address-2"><span id="6f70"></span>6F70</td>
-<td class="instruction">LD HL,($5B1B)</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f73"></span>6F73</td>
-<td class="instruction">ADD A,L</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f74"></span>6F74</td>
-<td class="instruction">JR NC,<a href="6F47.html#6f77">CRASH_SOUND_2</a></td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f76"></span>6F76</td>
-<td class="instruction">INC H</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label">CRASH_SOUND_2</td>
-<td class="address-2"><span id="6f77"></span>6F77</td>
-<td class="instruction">LD L,A</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f78"></span>6F78</td>
-<td class="instruction">LD ($5B1B),HL</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f7b"></span>6F7B</td>
-<td class="instruction">LD A,$02</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f7d"></span>6F7D</td>
-<td class="instruction">CALL $1601</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f80"></span>6F80</td>
-<td class="instruction">LD BC,$061A</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f83"></span>6F83</td>
-<td class="instruction">CALL $0DD9</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f86"></span>6F86</td>
-<td class="instruction">LD A,$07</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f88"></span>6F88</td>
-<td class="instruction">LD ($5C8F),A</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f8b"></span>6F8B</td>
-<td class="instruction">LD BC,($5B1B)</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f8f"></span>6F8F</td>
-<td class="instruction">CALL $1A1B</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f92"></span>6F92</td>
-<td class="instruction">LD A,$30</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f94"></span>6F94</td>
-<td class="instruction">RST $10</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f95"></span>6F95</td>
-<td class="instruction">LD HL,($5B49)</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f98"></span>6F98</td>
-<td class="instruction">INC HL</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f99"></span>6F99</td>
-<td class="instruction">LD ($5B49),HL</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f9c"></span>6F9C</td>
-<td class="instruction">POP HL</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
-<tr>
-<td class="asm-label"></td>
-<td class="address-1"><span id="6f9d"></span>6F9D</td>
-<td class="instruction">RET</td>
-<td class="comment-1" rowspan="1"></td>
-</tr>
 </table>
 <table class="asm-navigation">
 <tr>
@@ -361,14 +168,14 @@ Prev: <a href="6EF0.html">6EF0</a>
 </td>
 <td class="up">Up: <a href="../maps/all.html#6f47">Map</a></td>
 <td class="next">
-Next: <a href="6F9E.html">6F9E</a>
+Next: <a href="6F63.html">6F63</a>
 </td>
 </tr>
 </table>
 <footer>
 <div class="release"></div>
-<div class="copyright">&copy; 1983 Durell Software LTD</div>
-<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div class="copyright">&copy; 1983 Durell Software LTD &copy; 2023 ArcadeGeek LTD.</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.10.</div>
 <div><a href="../dec/asm/28487.html">Switch to decimal</a>.</div>
 </footer>
 </body>

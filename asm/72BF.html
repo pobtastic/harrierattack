@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Harrier Attack: Routine at 72BF</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../harrierattack.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
+<link rel="stylesheet" type="text/css" href="../skoolkit-dark.css" />
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-75RERFCHBG"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-75RERFCHBG');
+</script>
+</head>
+<body class="Asm-c">
+<table class="header">
+<tr>
+<td class="logo"><a href="../index.html"><img alt="logo" src="../images/logo.png" /></a></td>
+<td class="page-header">Routines</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="729F.html">729F</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#72bf">Map</a></td>
+<td class="next">
+Next: <a href="72CA.html">72CA</a>
+</td>
+</tr>
+</table>
+<div class="description">72BF: Draw Gauge</div>
+<table class="disassembly">
+<tr>
+<td class="routine-comment" colspan="5">
+<div class="details">
+<div class="paragraph">
+Used by the routine at <a href="7162.html">7162</a>.
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td class="asm-label">Draw_Gauge</td>
+<td class="address-2"><span id="72bf"></span>72BF</td>
+<td class="instruction">LD DE,$729F</td>
+<td class="comment-1" rowspan="1"><span class="register">DE</span>=<a href="729F.html">Data_Gauge</a> (UDG data).</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="72c2"></span>72C2</td>
+<td class="instruction">LD C,$30</td>
+<td class="comment-1" rowspan="1"><span class="register">C</span>=30 (colour attribute).</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="72c4"></span>72C4</td>
+<td class="instruction">LD B,$20</td>
+<td class="comment-1" rowspan="1"><span class="register">B</span>=20 (data length).</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="72c6"></span>72C6</td>
+<td class="instruction">CALL <a href="6BD0.html">Process_UDG_Data</a></td>
+<td class="comment-1" rowspan="1">Call <a href="6BD0.html">Process_UDG_Data</a>.</td>
+</tr>
+<tr>
+<td class="asm-label"></td>
+<td class="address-1"><span id="72c9"></span>72C9</td>
+<td class="instruction">RET</td>
+<td class="comment-1" rowspan="1">Return.</td>
+</tr>
+</table>
+<table class="asm-navigation">
+<tr>
+<td class="prev">
+Prev: <a href="729F.html">729F</a>
+</td>
+<td class="up">Up: <a href="../maps/all.html#72bf">Map</a></td>
+<td class="next">
+Next: <a href="72CA.html">72CA</a>
+</td>
+</tr>
+</table>
+<footer>
+<div class="release"></div>
+<div class="copyright">&copy; 1983 Durell Software LTD &copy; 2023 ArcadeGeek LTD.</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.10.</div>
+<div><a href="../dec/asm/29375.html">Switch to decimal</a>.</div>
+</footer>
+</body>
+</html>

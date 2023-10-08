@@ -34,7 +34,7 @@ Next: <a href="24822.html">24822</a>
 </td>
 </tr>
 </table>
-<div class="description">24808: Fetch UDG Address.</div>
+<div class="description">24808: Fetch UDG Address</div>
 <table class="disassembly">
 <tr>
 <td class="routine-comment" colspan="5">
@@ -43,10 +43,28 @@ Next: <a href="24822.html">24822</a>
 Used by the routines at <a href="24852.html">24852</a> and <a href="29597.html">29597</a>.
 </div>
 </div>
+<table class="input">
+<tr class="asm-input-header">
+<th colspan="2">Input</th>
+</tr>
+<tr>
+<td class="register">A</td>
+<td class="register-desc">UDG number</td>
+</tr>
+</table>
+<table class="output">
+<tr class="asm-output-header">
+<th colspan="2">Output</th>
+</tr>
+<tr>
+<td class="register">DE</td>
+<td class="register-desc">The address of the UDG</td>
+</tr>
+</table>
 </td>
 </tr>
 <tr>
-<td class="asm-label">UDG_ADDRESS</td>
+<td class="asm-label">Address_UDG</td>
 <td class="address-2"><span id="24808"></span>24808</td>
 <td class="instruction">PUSH HL</td>
 <td class="comment-1" rowspan="1">Stash <span class="register">HL</span> on the stack.</td>
@@ -55,7 +73,7 @@ Used by the routines at <a href="24852.html">24852</a> and <a href="29597.html">
 <td class="asm-label"></td>
 <td class="address-1"><span id="24809"></span>24809</td>
 <td class="instruction">LD L,A</td>
-<td class="comment-1" rowspan="8">Point <span class="register">DE</span> at the graphic data for the corresponding tile (at <a href="25984.html">$6580</a>+8*<span class="register">A</span>).</td>
+<td class="comment-1" rowspan="8">Point <span class="register">DE</span> at the graphic data for the corresponding tile (at <a href="25984.html">25984</a>+8*<span class="register">A</span>).</td>
 </tr>
 <tr>
 <td class="asm-label"></td>
@@ -118,8 +136,8 @@ Next: <a href="24822.html">24822</a>
 </table>
 <footer>
 <div class="release"></div>
-<div class="copyright">&copy; 1983 Durell Software LTD</div>
-<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.6.</div>
+<div class="copyright">&copy; 1983 Durell Software LTD &copy; 2023 ArcadeGeek LTD.</div>
+<div class="created">Created using <a href="https://skoolkit.ca">SkoolKit</a> 8.10.</div>
 <div><a href="../../asm/60E8.html">Switch to hexadecimal</a>.</div>
 </footer>
 </body>
