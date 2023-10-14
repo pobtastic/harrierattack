@@ -16,6 +16,7 @@ Game=Harrier Attack
 Logo=#SCR1,0,0,32,4,$4000,$5800(/images/logo)
 Copyright=&copy; 1983 Durell Software LTD &copy; 2023 ArcadeGeek LTD.
 LinkInternalOperands=1
+Repository=https://github.com/pobtastic/harrierattack/
 AddressAnchor={address#IF({base}==16)(:04x)}
 StyleSheet=harrierattack.css;skoolkit.css;skoolkit-dark.css
 
