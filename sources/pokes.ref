@@ -1,0 +1,156 @@
+; Copyright 2024 Paul Maddern (paul@arcadegeek.co.uk)
+
+[Poke:No Flak]
+<code>
+  <div>POKE #R$69A8(#N$69A8),#N$C9</div>
+</code>
+
+This alters the first line of #R$69A8 to simply return:
+<table>
+  <tbody>
+    <tr>
+      <td class="address-1">#R$69A8(#N$69A8)</td>
+      <td class="instruction">RET</td>
+    </tr>
+  </tbody>
+</table>
+
+[Poke:Infinite Fuel]
+
+<code>
+  <div>POKE #R$6FF6(#N$6FF6),#N$00</div>
+  <div>POKE #R$6FF6(#N$6FF7),#N$00</div>
+  <div>POKE #R$6FF6(#N$6FF8),#N$00</div>
+</code>
+
+This removes the line:
+<table>
+  <tbody>
+    <tr>
+      <td class="address-1">#R$6FF6(#N$6FF6)</td>
+      <td class="instruction">CALL #R$6BE7</td>
+    </tr>
+  </tbody>
+</table>
+
+[Poke:Infinite Rockets]
+
+<code>
+  <div>POKE #R$6FCD(#N$6FCD),#N$00</div>
+  <div>POKE #R$6FCD(#N$6FCE),#N$00</div>
+  <div>POKE #R$6FCD(#N$6FCF),#N$00</div>
+</code>
+
+This removes the line:
+<table>
+  <tbody>
+    <tr>
+      <td class="address-1">#R$6FCD(#N$6FCD)</td>
+      <td class="instruction">CALL #R$6BE7</td>
+    </tr>
+  </tbody>
+</table>
+
+[Poke:Infinite Bombs]
+
+<code>
+  <div>POKE #R$6E34(#N$6E34),#N$00</div>
+  <div>POKE #R$6E34(#N$6E35),#N$00</div>
+  <div>POKE #R$6E34(#N$6E36),#N$00</div>
+</code>
+
+This removes the line:
+<table>
+  <tbody>
+    <tr>
+      <td class="address-1">#R$6E34(#N$6E34)</td>
+      <td class="instruction">CALL #R$6BE7</td>
+    </tr>
+  </tbody>
+</table>
+
+[Poke:All Three With Only One Poke]
+
+<code>
+  <div>POKE #R$6BFB(#N$6BFC),#N$00</div>
+</code>
+
+[Poke:Immune To Collisions]
+Use with "Infinite Fuel":
+<code>
+  <div>POKE #R$6DC7(#N$6DC8),#N$00</div>
+  <div>POKE #R$7072(#N$7073),#N$00</div>
+</code>
+
+[Poke:Immune To Rockets]
+<code>
+  <div>POKE #R$6A9D(#N$6A9E),#N$00</div>
+  <div>POKE #R$708F(#N$708F),#N$00</div>
+</code>
+
+[Poke:Infinite Harriers]
+But, you will die in large collisions:
+<code>
+  <div>POKE #R$72FF(#N$7300),#N$00</div>
+  <div>POKE #R$708F(#N$708F),#N$00</div>
+</code>
+
+[Poke:Infinite Fuel (Alt)]
+<code>
+  <div>POKE #R$6FF6(#N$6FF6),#N$01</div>
+</code>
+
+[Poke:Infinite Rockets (Alt)]
+<code>
+  <div>POKE #R$6FCD(#N$6FCD),#N$21</div>
+</code>
+
+This alters the line:
+<table>
+  <tbody>
+    <tr>
+      <td class="address-1">#R$6FCD(#N$6FCD)</td>
+      <td class="instruction">CALL #R$6BE7</td>
+    </tr>
+  </tbody>
+</table>
+
+To:
+<table>
+  <tbody>
+    <tr>
+      <td class="address-1">#R$6FCD(#N$6FCD)</td>
+      <td class="instruction">LD #REGhl,#R$6BE7</td>
+    </tr>
+  </tbody>
+</table>
+
+So #R$6BE7 is never called (and #REGhl is overwritten in the following
+command).
+
+[Poke:Infinite Bombs (Alt)]
+<code>
+  <div>POKE #R$6E34(#N$6E34),#N$3A</div>
+</code>
+
+This alters the line:
+<table>
+  <tbody>
+    <tr>
+      <td class="address-1">#R$6E34(#N$6E34)</td>
+      <td class="instruction">CALL #R$6BE7</td>
+    </tr>
+  </tbody>
+</table>
+
+To:
+<table>
+  <tbody>
+    <tr>
+      <td class="address-1">#R$6E34(#N$6E34)</td>
+      <td class="instruction">LD #REGa,(#R$6BE7(#N$6BE7))</td>
+    </tr>
+  </tbody>
+</table>
+
+So #R$6BE7 is never called (and #REGa is overwritten in the following command).

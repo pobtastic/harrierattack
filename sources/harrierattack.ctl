@@ -1,4 +1,4 @@
-; Copyright Durell Software LTD 1983, 2023 ArcadeGeek LTD.
+; Copyright Durell Software LTD 1983, 2024 ArcadeGeek LTD.
 ; NOTE: Disassembly is Work-In-Progress.
 ; Label naming is loosely based on Action_ActionName_SubAction e.g. Print_HighScore_Loop.
 
@@ -59,6 +59,8 @@ c $604D
   $604D,$0B Copies the byte contained at #N$5900 to the following #N$FF bytes.
   $6058,$0B Copies the byte contained at #N$4800 to the following #N$7FF bytes.
   $6063,$02 Check if D3 of #REGa is set?
+
+c $60B6
 
 c $60D6 Convert To Screen Buffer Address
 @ $60D6 label=ScreenBufferAddress
@@ -134,6 +136,31 @@ N $6145 Else, loop back to the start.
 
 c $6148
 
+c $61C4
+
+b $620D
+N $620D #UDGTABLE
+. { #FOR$00,$0B,,$04(n,#UDG($6580+#PEEK($620D+n)*$08,attr=$07)) }
+. UDGTABLE#
+  $620D,$0C
+  $6219,$01 Terminator.
+N $621A #UDGTABLE
+. { #FOR$00,$0B,,$04(n,#UDG($6580+#PEEK($621A+n)*$08,attr=$07)) }
+. UDGTABLE#
+  $621A,$0C
+  $6226,$01 Terminator.
+
+c $6227
+
+b $633B
+  $633B,$04
+  $633F,$01 Terminator.
+L $633B,$05,$04
+
+b $634F
+
+c $6358
+
 b $6580 Game UDGs
 @ $6580 label=UDGs
   $6580,$08 #UDG(#PC,attr=56)
@@ -147,9 +174,14 @@ N $68E0 #LET(id=#EVAL($40 + (#PC - $68E0) / $08))CHARACTER: "#MAP({id})(#CHR({id
   $68E0,b,$01 #UDG(#PC)
 L $68E0,$08,$19
 
-c $69A8
+c $69A8 Handler: Flak
+@ $69A8 label=Handler_Flak
 
 b $6A1C
+
+c $6A24
+
+c $6ADA
 
 c $6BE7
 
@@ -287,8 +319,10 @@ N $7204
 
 b $721A
 
-b $723F
+b $723F Messaging: Banner
+@ $723F label=Messaging_Banner
 D $723F #FOR$00,$1F,,4(n,#UDG($6580+#PEEK(#PC+n)*$08,attr=$07))
+. #FONT#(:(#STR(#PC,$00,$20)))$6480,attr=$07(banner)
   $723F,$20,$10 UDG IDs.
 
 b $725F
@@ -328,7 +362,7 @@ b $753E
   $7545,$0F ????
 
 c $7554 Game Entry Point
-  $7554,$09 Call #R$7554 three times.
+  $7554,$09 Call #R$78B0 three times.
   $755D,$05 #HTML(#REGa=<a href="https://skoolkid.github.io/rom/asm/5C6A.html">FLAGS2</a> set CAPS LOCK on.)
   $7562,$05 #HTML(<a href="https://skoolkid.github.io/rom/asm/1601.html">CHAN_OPEN</a> (open upper screen channel).)
 N $7567

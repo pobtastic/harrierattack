@@ -8,13 +8,13 @@
 
 [Config]
 Expand=#INCLUDE(Expand)
-RefFiles=analytics.ref;bases.ref
+RefFiles=bases.ref;analytics.ref;changelog.ref;pokes.ref
 GameDir=harrierattack
 
 [Game]
 Game=Harrier Attack
 Logo=#SCR1,0,0,32,4,$4000,$5800(/images/logo)
-Copyright=&copy; 1983 Durell Software LTD &copy; 2023 ArcadeGeek LTD.
+Copyright=&copy; 1983 Durell Software LTD &copy; 2024 ArcadeGeek LTD.
 LinkInternalOperands=1
 Repository=https://github.com/pobtastic/harrierattack/
 AddressAnchor={address#IF({base}==16)(:04x)}
@@ -28,15 +28,6 @@ MemoryMaps
 Graphics
 DataTables
 Reference
-
-[Page:Changelog]
-SectionType=BulletPoints
-[Changelog:20200701]
-- First draft created in SkoolKit 8.1.
-[Changelog:20220701]
-- Updated to Skoolkit 8.6.
-[Changelog:20231008]
-- Updated to Skoolkit 8.10.
 
 [Expand]
 #DEF(#COLOUR(id)

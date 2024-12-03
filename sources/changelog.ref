@@ -1,0 +1,19 @@
+; Copyright 2024 Paul Maddern (paul@arcadegeek.co.uk)
+
+[Page:Changelog]
+SectionType=BulletPoints
+
+[Changelog:20231008]
+-
+
+- Updated to Skoolkit 8.10.
+
+[Changelog:20220701]
+-
+
+- Updated to Skoolkit 8.6.
+
+[Changelog:20200701]
+-
+
+- First draft created in SkoolKit 8.1.
