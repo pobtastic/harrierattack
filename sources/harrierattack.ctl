@@ -1,4 +1,4 @@
-; Copyright Durell Software LTD 1983, 2024 ArcadeGeek LTD.
+; Copyright Durell Software LTD 1983, 2025 ArcadeGeek LTD.
 ; NOTE: Disassembly is Work-In-Progress.
 ; Label naming is loosely based on Action_ActionName_SubAction e.g. Print_HighScore_Loop.
 
@@ -321,21 +321,20 @@ b $721A
 
 b $723F Messaging: Banner
 @ $723F label=Messaging_Banner
-D $723F #FOR$00,$1F,,4(n,#UDG($6580+#PEEK(#PC+n)*$08,attr=$07))
-. #FONT#(:(#STR(#PC,$00,$20)))$6480,attr=$07(banner)
+D $723F #FOR$00,$1F,,$04(n,#UDG($6580+#PEEK(#PC+n)*$08,attr=$07))
   $723F,$20,$10 UDG IDs.
 
-b $725F
-D $725F #FOR$00,$1F,,4(n,#UDG($6580+#PEEK(#PC+n)*$08,attr=$07))
+b $725F Messaging: Dashboard
+@ $725F label=Messaging_Dashboard
+N $725F #FOR$00,$1F,,$04(n,#UDG($6580+#PEEK(#PC+n)*$08,attr=$07))
   $725F,$20,$10 UDG IDs.
-
-b $727F
-D $727F #FOR$00,$1F,,4(n,#UDG($6580+#PEEK(#PC+n)*$08,attr=$07))
+@ $727F label=Messaging_Artillery
+N $727F #FOR$00,$1F,,$04(n,#UDG($6580+#PEEK(#PC+n)*$08,attr=$07))
   $727F,$20,$10 UDG IDs.
 
 b $729F Gauge Data
 @ $729F label=Data_Gauge
-D $729F #FOR$00,$1F,,4(n,#UDG($6580+#PEEK(#PC+n)*$08,attr=$30))
+D $729F #FOR$00,$1F,,$04(n,#UDG($6580+#PEEK(#PC+n)*$08,attr=$30))
   $729F,$20,$10 UDG IDs.
 
 c $72BF Draw Gauge
